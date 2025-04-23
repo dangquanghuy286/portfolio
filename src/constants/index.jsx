@@ -93,15 +93,11 @@ export const contactDetails = [
 
 export const words = [
   "React",
-  "Next.js",
   "TailwindCSS",
   "TypeScript",
   "JavaScript",
   "HTML5",
   "CSS3",
-  "Node.js",
-  "Express",
-  "MongoDB",
   "SASS/SCSS",
   "Git",
   "GitHub",
