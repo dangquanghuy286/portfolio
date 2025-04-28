@@ -5,6 +5,13 @@
   body {
     font-family: "Cabin", "Space Grotesk", sans-serif;
     margin: 0;
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
   }
 }
 @layer components {
@@ -16,6 +23,22 @@
   }
   .btn-ghost {
     @apply flex h-10 flex-shrink-0 items-center justify-center gap-x-2 rounded-lg p-2 text-slate-400 transition-colors hover:bg-blue-50 hover:text-slate-500 dark:hover:bg-blue-950 dark:hover:text-slate-300;
+  }
+  .mask-gradient {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0.9),
+      rgba(0, 0, 0.9),
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0.9),
+      rgba(0, 0, 0.9),
+      transparent
+    );
   }
 }
 @layer utilities {

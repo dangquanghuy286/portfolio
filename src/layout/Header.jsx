@@ -11,8 +11,8 @@ import DarkMode from "../components/DarkMode";
 const Header = ({ menuOpen, isMenuOpen }) => {
   return (
     <>
-      <header className="fixed top-0 z-10 w-full px-4 py-4">
-        <nav className="container dark:text-white text-black flex items-center justify-between rounded-full border-2 border-gray-200 dark:border-white/10 dark: bg-white/5 p-2 backdrop-blur">
+      <header className="fixed top-0 left-0 right-0 z-10 w-full px-4 py-4">
+        <nav className="w-full max-w-6xl mx-auto dark:text-white text-black flex items-center justify-between rounded-full border-2 border-gray-200 dark:border-white/10 bg-white/5 p-2 backdrop-blur">
           <div className="flex items-center">
             <Logo />
           </div>
@@ -32,7 +32,7 @@ const Header = ({ menuOpen, isMenuOpen }) => {
               <DarkMode />
             </div>
             <div className="hidden md:block">
-              <Button variant="outline">Contact Me</Button>
+              <Button variant="outline">Liên hệ với tôi</Button>
             </div>
           </div>
 

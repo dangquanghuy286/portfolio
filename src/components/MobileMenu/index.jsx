@@ -34,7 +34,7 @@ const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
         )}
       </ul>
       <Button variant="outline" className="mt-5 py-2">
-        Contact Me
+        Liên hệ với tôi
       </Button>
     </div>
   );
