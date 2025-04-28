@@ -1,11 +1,12 @@
 import React from "react";
 import { BiLogoGraphql } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 
 const Logo = () => {
   return (
-    <>
-      <BiLogoGraphql className="cursor-pointer text-4xl text-white" />
-    </>
+    <NavLink to="/">
+      <BiLogoGraphql className="cursor-pointer text-5xl " />
+    </NavLink>
   );
 };
 

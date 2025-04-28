@@ -6,12 +6,13 @@ import Button from "../components/Button";
 import MobileMenu from "../components/MobileMenu";
 import Logo from "../components/Logo";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
+import DarkMode from "../components/DarkMode";
 
 const Header = ({ menuOpen, isMenuOpen }) => {
   return (
     <>
       <header className="fixed top-0 z-10 w-full px-4 py-4">
-        <nav className="container text-white flex items-center justify-between rounded-full border-2 border-white/10 bg-white/5 p-2 backdrop-blur">
+        <nav className="container dark:text-white text-black flex items-center justify-between rounded-full border-2 border-gray-200 dark:border-white/10 dark: bg-white/5 p-2 backdrop-blur">
           <div className="flex items-center">
             <Logo />
           </div>
@@ -19,18 +20,25 @@ const Header = ({ menuOpen, isMenuOpen }) => {
             {menu.map((item, index) =>
               item.link.map((link, linkIndex) => (
                 <li key={`${index}-${linkIndex}`}>
-                  <NavLink to={link.path}>{link.text}</NavLink>{" "}
+                  <NavLink className="nav_item" to={link.path}>
+                    {link.text}
+                  </NavLink>
                 </li>
               ))
             )}
           </ul>
-          <div className="hidden md:block">
-            <Button>Contact Me</Button>
+          <div className="flex items-center justify-between gap-4">
+            <div className="hidden md:block">
+              <DarkMode />
+            </div>
+            <div className="hidden md:block">
+              <Button variant="outline">Contact Me</Button>
+            </div>
           </div>
 
           {/* Menu Toggle Button */}
           <button
-            className="text-4xl text-white md:hidden"
+            className="text-4xl dark:text-white md:hidden"
             onClick={() => isMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
             aria-expanded={menuOpen}
@@ -46,7 +54,7 @@ const Header = ({ menuOpen, isMenuOpen }) => {
       {/* Over play for mobile Menu */}
       {menuOpen && (
         <div
-          className="fixed inset-0 z-20 bg-slate-950 opacity-50"
+          className="fixed inset-0 z-20 bg-slate-950 opacity-50  "
           onClick={() => isMenuOpen(!menuOpen)}
           aria-label="Close Menu"
         />

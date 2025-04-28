@@ -1,14 +1,11 @@
-import { useState } from "react";
-import Header from "./layout/Header";
+import AllRoute from "./components/AllRoute";
+import { ThemeProvider } from "./contexts/theme-context";
 
 function App() {
-  const [menuOpen, isMenuOpen] = useState();
   return (
-    <>
-      <div className="bg-slate-950 h-screen overflow-x-clip antialiased">
-        <Header menuOpen={menuOpen} isMenuOpen={isMenuOpen} />
-      </div>
-    </>
+    <ThemeProvider storageKey="theme" defaultTheme="light">
+      <AllRoute />
+    </ThemeProvider>
   );
 }
 

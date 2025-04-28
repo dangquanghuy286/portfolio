@@ -3,19 +3,26 @@ import React from "react";
 import Logo from "../Logo";
 import { NavLink } from "react-router-dom";
 import Button from "../Button";
+import DarkMode from "../DarkMode";
 
 const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
   return (
     <div
-      className={`fixed left-0 top-0 z-30 h-full w-3/4 transform border-r-2 border-white/15 bg-white/20 px-4 backdrop-blur transition-transform duration-300 ${
+      className={`fixed left-0 top-0 z-30 h-full w-3/4 transform border-r-2 dark:border-white/15 dark:bg-white/20 px-4 backdrop-blur transition-transform duration-300 bg-slate-900 border-slate-950 ${
         menuOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
-      <div className="mt-5">
-        <Logo />
+      <div className="flex justify-between items-center gap-4">
+        <div className="w-12 h-12 flex items-center justify-center text-white ">
+          <Logo />
+        </div>
+        <div className="w-12 h-12 flex items-center justify-center">
+          <DarkMode />
+        </div>
       </div>
+
       <hr className="my-3 border-2 border-white/5" />
-      <ul className="mt-5 flex-col flex space-x-3 ">
+      <ul className="mt-5 flex-col flex space-x-3 text-slate-50 ">
         {menu.map((item, index) =>
           item.link.map((link, linkIndex) => (
             <li key={`${index}-${linkIndex}`}>
@@ -26,7 +33,9 @@ const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
           ))
         )}
       </ul>
-      <Button>Contact Me</Button>
+      <Button variant="outline" className="mt-5 py-2">
+        Contact Me
+      </Button>
     </div>
   );
 };

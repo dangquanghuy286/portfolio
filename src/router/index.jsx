@@ -1,3 +1,4 @@
+import LayOutDefault from "../layout/LayOutDefault";
 import About from "../pages/Abouts";
 import Contact from "../pages/Contacts";
 import Home from "../pages/Home";
@@ -7,23 +8,29 @@ import Services from "../pages/Services";
 export const routes = [
   {
     path: "/",
-    element: <Home />,
-    index: true,
-  },
-  {
-    path: "/project",
-    element: <Projects />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/services",
-    element: <Services />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
+    element: <LayOutDefault />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        index: true,
+      },
+      {
+        path: "/project",
+        element: <Projects />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/services",
+        element: <Services />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
   },
 ];
