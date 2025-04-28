@@ -12,7 +12,7 @@
     @apply cursor-pointer;
   }
   .nav_item {
-    @apply block rounded-full px-4 py-1.5 text-sm font-semibold dark:text-white/70 transition duration-300 hover:bg-white/10;
+    @apply block rounded-full px-4 py-1.5 text-lg font-semibold dark:text-white/70 transition duration-300 hover:bg-[#03a0c5] hover:text-white dark:hover:bg-white/10;
   }
   .btn-ghost {
     @apply flex h-10 flex-shrink-0 items-center justify-center gap-x-2 rounded-lg p-2 text-slate-400 transition-colors hover:bg-blue-50 hover:text-slate-500 dark:hover:bg-blue-950 dark:hover:text-slate-300;
