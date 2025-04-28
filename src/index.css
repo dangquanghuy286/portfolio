@@ -5,12 +5,5 @@
   body {
     font-family: "Cabin", "Space Grotesk", sans-serif;
     margin: 0;
-    padding: 1rem; /* Áp dụng padding mặc định */
-  }
-
-  @screen lg {
-    body {
-      padding: 2rem; /* Áp dụng padding cho màn hình lớn */
-    }
   }
 }

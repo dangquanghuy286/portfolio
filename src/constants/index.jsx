@@ -1,28 +1,20 @@
-import projectImage from "../assets/project.png";
+import projectImage from "../assets/project3.png";
 import { BiCodeAlt, BiMobileAlt, BiPalette, BiSearchAlt } from "react-icons/bi";
-
-export const menuItems = [
-  { label: "Trang chủ", href: "#" },
-  { label: "Dự án", href: "#projects" },
-  { label: "Giới thiệu", href: "#about" },
-  { label: "Dịch vụ", href: "#services" },
-  { label: "Liên hệ", href: "#contact" },
-];
 
 export const projects = [
   {
     id: 1,
-    title: "Website Portfolio Cá Nhân",
+    title: "Website chấm trắc nghiệm",
     image: projectImage,
     description:
-      "Một website portfolio cá nhân chuẩn responsive, sử dụng ReactJS và TailwindCSS để giới thiệu kỹ năng và dự án.",
+      "Xây dựng giao diện bằng ReactJS & Tailwind CSSThiết kế hệ thống lưu trữ câu hỏi, bài kiểm tra.Phát triển logic chấm điểm tự động.Tối ưu hiệu suất và xử lý lỗi.Cải thiện UI/UX, nâng cao hiệu suất và trải nghiệm người dùng.",
   },
   {
     id: 2,
     title: "Website Thương Mại Điện Tử",
     image: projectImage,
     description:
-      "Ứng dụng web bán hàng với chức năng xem sản phẩm, giỏ hàng, đăng nhập. Xây dựng bằng React, Node.js, Express và MongoDB.",
+      "+Công nghệ: HTML, SCSS, JavaScript, REACTJS .Thiết kế giao diện trực quan, responsive, tối ưu trải nghiệm người dùng trên nhiều thiết bị. Phát triển hiệu ứng UI/UX, cải thiện tính tương tác và thẩm mỹ cho sản phẩm.",
   },
   {
     id: 3,
