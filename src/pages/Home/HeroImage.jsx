@@ -10,7 +10,7 @@ import {
 const HeroImage = () => {
   return (
     <div
-      className="mask-gradient absolute right-0 top-10 h-[550px]
+      className="mask-gradient absolute right-0 top-0 h-[550px]
     w-full overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] border-blue-500 bg-gray-700 md:h-[660px] md:w-[450px]"
     >
       <AnimatedIcon

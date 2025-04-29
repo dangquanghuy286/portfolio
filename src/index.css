@@ -5,13 +5,6 @@
   body {
     font-family: "Cabin", "Space Grotesk", sans-serif;
     margin: 0;
-    box-sizing: border-box;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
   }
 }
 @layer components {
@@ -24,25 +17,53 @@
   .btn-ghost {
     @apply flex h-10 flex-shrink-0 items-center justify-center gap-x-2 rounded-lg p-2 text-slate-400 transition-colors hover:bg-blue-50 hover:text-slate-500 dark:hover:bg-blue-950 dark:hover:text-slate-300;
   }
-  .mask-gradient {
+  .dark .mask-gradient {
     mask-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0.9),
-      rgba(0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
       transparent
     );
     -webkit-mask-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0.9),
-      rgba(0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
+      transparent
+    );
+  }
+  .mask-gradient-right {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.9),
       transparent
     );
   }
 }
 @layer utilities {
   .container {
-    @apply lg:max-w-6xl;
+    @apply lg:max-w-7xl;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #20242d;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #03a0c5;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
   }
 }

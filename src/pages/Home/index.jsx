@@ -1,22 +1,30 @@
-import React from "react";
-import HeroContent from "./HeroContent";
-import HeroImage from "./HeroImage";
+import { projects } from "../../constants";
+import Projects from "../Projects";
+import Home from "./Home";
 
-const Home = ({ menuOpen }) => {
+import Tape from "./Tape";
+
+const HomeDefault = ({ menuOpen }) => {
+  const limitedProjects = projects.slice(0, 3);
+
   return (
-    <section className="overflow-hidden">
-      <div
-        className={`container transition-all duration-300 ${
-          menuOpen ? "px-10 blur-sm" : ""
-        }`}
-      >
-        <div className="relative flex h-screen flex-col-reverse items-center md:flex-row">
-          <HeroImage />
-          <HeroContent />
-        </div>
+    <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col items-center">
+      {/* Hero Section */}
+      <div className="w-full max-w-5xl px-4 py-16">
+        <Home menuOpen={menuOpen} />
       </div>
-    </section>
+
+      {/* Tape Section */}
+      <div className="w-full max-w-5xl px-4 py-16">
+        <Tape />
+      </div>
+
+      {/* Projects Section */}
+      <div className="w-full max-w-5xl px-4 py-16">
+        <Projects data={limitedProjects} />
+      </div>
+    </div>
   );
 };
 
-export default Home;
+export default HomeDefault;
