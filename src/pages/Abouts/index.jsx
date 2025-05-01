@@ -1,7 +1,13 @@
 import React from "react";
+import SectionTitle from "../../components/SectionTitle";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <section>
+      <SectionTitle title="Về tôi" />
+      <div>{<img src="" alt="" />}</div>
+    </section>
+  );
 };
 
 export default About;

@@ -1,4 +1,5 @@
 import { projects } from "../../constants";
+import About from "../Abouts";
 import Projects from "../Projects";
 import Home from "./Home";
 
@@ -8,7 +9,7 @@ const HomeDefault = ({ menuOpen }) => {
   const limitedProjects = projects.slice(0, 3);
 
   return (
-    <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col items-center">
+    <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col items-center overflow-x-clip antialiased">
       {/* Hero Section */}
       <div className="w-full max-w-5xl px-4 py-16">
         <Home menuOpen={menuOpen} />
@@ -22,6 +23,9 @@ const HomeDefault = ({ menuOpen }) => {
       {/* Projects Section */}
       <div className="w-full max-w-5xl px-4 py-16">
         <Projects data={limitedProjects} />
+      </div>
+      <div className="w-full max-w-5xl px-4 py-16">
+        <About />
       </div>
     </div>
   );
