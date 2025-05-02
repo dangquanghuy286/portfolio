@@ -23,10 +23,10 @@ const Tape = () => {
                 >
                   {/* Mỗi từ là một nhóm gồm từ và biểu tượng Meta, nằm ngang và không xuống dòng */}
 
-                  <span className="text-sm font-extrabold uppercase text-gray-800">
+                  <span className="text-sm font-extrabold uppercase text-black">
                     {word}
                   </span>
-                  <BiLogoMeta className="size-10 -rotate-12 text-gray-800" />
+                  <BiLogoMeta className="size-10 -rotate-12 text-black" />
                   {/* Icon Meta nghiêng 12 độ, kích thước lớn */}
                 </div>
               ))}
