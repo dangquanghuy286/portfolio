@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Button from "../Button";
 
 const ProjectCart = ({ projects, index }) => {
   return (
@@ -16,6 +17,9 @@ const ProjectCart = ({ projects, index }) => {
         <p className="dark:text-white/70 text-gray-700 text-sm">
           {projects.description}
         </p>
+        <Button className="w-fit px-4 py-2 text-sm whitespace-nowrap">
+          Xem chi tiết
+        </Button>
       </div>
 
       {/* Image Section */}
