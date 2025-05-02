@@ -1,5 +1,5 @@
 import projectImage from "../assets/project3.png";
-import { BiCodeAlt, BiMobileAlt, BiPalette, BiSearchAlt } from "react-icons/bi";
+import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 
 export const projects = [
   {
@@ -29,7 +29,7 @@ export const services = [
   {
     title: "Lập trình Frontend",
     description:
-      "Xây dựng website hiện đại, responsive với ReactJS, Next.js và TailwindCSS.",
+      "Xây dựng website hiện đại, responsive với ReactJS và TailwindCSS.",
     icon: BiCodeAlt,
   },
   {
@@ -39,16 +39,16 @@ export const services = [
     icon: BiPalette,
   },
   {
-    title: "Phát triển ứng dụng di động",
+    title: "Học hỏi và tích hợp công nghệ mới",
     description:
-      "Xây dựng ứng dụng di động đa nền tảng bằng React Native và Expo.",
-    icon: BiMobileAlt,
+      "Nhanh chóng tiếp cận và áp dụng các công nghệ Frontend mới như Next.js hoặc TypeScript để nâng cao chất lượng dự án.",
+    icon: BiBrain,
   },
   {
-    title: "Tối ưu SEO Website",
+    title: "Tối ưu hóa hiệu suất website",
     description:
-      "Cải thiện khả năng hiển thị website trên công cụ tìm kiếm thông qua tối ưu hóa SEO.",
-    icon: BiSearchAlt,
+      "Cải thiện tốc độ tải trang và trải nghiệm người dùng thông qua các kỹ thuật như lazy loading và tối ưu hóa hình ảnh.",
+    icon: BiRocket,
   },
 ];
 
@@ -94,5 +94,9 @@ export const words = [
   "Git",
   "GitHub",
   "Figma",
-  "VS Code",
+  "BootStrap",
+  "AntDesign",
+  "Responsive Design",
+  "UI/UX Basics",
+  "RESTful APIs",
 ];

@@ -8,12 +8,12 @@ const LayOutDefault = () => {
   return (
     <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col">
       {/* Header */}
-      <div className="max-w-5xl mx-auto px-4 py-4">
+      <div className="max-w-7xl mx-auto px-4 py-4">
         <Header menuOpen={menuOpen} isMenuOpen={setMenuOpen} />
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 w-full max-w-5xl mx-auto px-4 ">
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 ">
         <Outlet menuOpen={menuOpen} />
       </main>
 
