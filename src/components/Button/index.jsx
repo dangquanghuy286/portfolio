@@ -4,7 +4,7 @@ const Button = ({ children, variant = "primary", className = "" }) => {
   const variants = {
     primary: "bg-[#0287a8] text-white border-none hover:bg-[#03a0c5]",
     outline:
-      "bg-transparent text-blue-400 border-2 border-blue-300 hover:bg-blue-100",
+      "bg-transparent text-[#03a0c5] border-2 border-[#03a0c5] hover:bg-blue-100",
   };
 
   return (
