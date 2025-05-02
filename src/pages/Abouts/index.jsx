@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+import { motion } from "framer-motion"; // Thư viện dùng để tạo animation
 import SectionTitle from "../../components/SectionTitle";
 import aboutImg from "../../assets/about.jpg";
 import Button from "../../components/Button";
@@ -8,19 +10,37 @@ const About = () => {
   return (
     <section className="py-14">
       <SectionTitle title="Về tôi" className="mb-6" />
-      <div
+
+      {/* Khối bao toàn bộ phần nội dung giới thiệu */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }} // Bắt đầu ẩn và trượt xuống 50px
+        whileInView={{ opacity: 1, y: 0 }} // Khi cuộn tới, hiện ra và trượt về đúng vị trí
+        transition={{ duration: 0.8, ease: "easeOut" }} // Animation kéo dài 0.8s, mượt dần
+        viewport={{ once: true }} // Chỉ animate 1 lần khi phần tử vào khung nhìn
         className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center py-8 px-4 sm:px-6 lg:px-8 
-        bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2  border-gray-300  dark:border-gray-600
+        bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2 border-gray-300 dark:border-gray-600
         rounded-lg shadow-sm"
       >
-        <div className="flex justify-center">
+        {/* Hình ảnh đại diện */}
+        <motion.div
+          initial={{ scale: 0.8, opacity: 0 }} // Bắt đầu nhỏ hơn 1 chút và ẩn
+          whileInView={{ scale: 1, opacity: 1 }} // Phóng to về kích thước thật và hiện rõ
+          transition={{ duration: 0.6, delay: 0.2 }} // Animation kéo dài 0.6s, trễ 0.2s
+          className="flex justify-center"
+        >
           <img
             src={aboutImg}
             alt="Ảnh đại diện"
             className="rounded-full shadow-lg w-40 sm:w-52 md:w-60 h-auto object-cover border-2 border-black"
           />
-        </div>
-        <div>
+        </motion.div>
+
+        {/* Phần thông tin chi tiết */}
+        <motion.div
+          initial={{ x: 100, opacity: 0 }} // Bắt đầu lệch sang phải và ẩn
+          whileInView={{ x: 0, opacity: 1 }} // Trượt vào từ bên phải và hiện ra
+          transition={{ duration: 0.6, delay: 0.3 }} // Animation kéo dài 0.6s, trễ 0.3s
+        >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
             Đặng Hữu Quang Huy
           </h2>
@@ -52,8 +72,8 @@ const About = () => {
             </li>
           </ul>
           <Button className="mt-2">Tuyển tôi</Button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

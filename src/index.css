@@ -42,6 +42,22 @@
       transparent
     );
   }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0); /* Bắt đầu từ vị trí gốc theo trục X */
+    }
+    100% {
+      transform: translateX(
+        -50%
+      ); /* Di chuyển sang trái 50% chiều rộng phần tử */
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 20s linear infinite; /* Áp dụng animation "scroll" trong 20 giây, tuyến tính, lặp vô hạn */
+    display: inline-flex; /* Hiển thị phần tử dưới dạng flex nằm ngang */
+    width: max-content; /* Chiều rộng tự động theo nội dung lớn nhất */
+  }
 }
 @layer utilities {
   .container {
