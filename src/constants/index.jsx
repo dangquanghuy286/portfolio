@@ -1,4 +1,5 @@
 import projectImage from "../assets/project3.png";
+import petImage from "../assets/petshop.png";
 import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 
 export const projects = [
@@ -12,12 +13,33 @@ export const projects = [
   {
     id: 2,
     title: "Website Thương Mại Điện Tử",
-    image: projectImage,
+    image: petImage,
     description:
       "+Công nghệ: HTML, SCSS, JavaScript, REACTJS .Thiết kế giao diện trực quan, responsive, tối ưu trải nghiệm người dùng trên nhiều thiết bị. Phát triển hiệu ứng UI/UX, cải thiện tính tương tác và thẩm mỹ cho sản phẩm.",
   },
   {
     id: 3,
+    title: "Trang Quản Trị Admin",
+    image: projectImage,
+    description:
+      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
+  },
+  {
+    id: 6,
+    title: "Trang Quản Trị Admin",
+    image: projectImage,
+    description:
+      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
+  },
+  {
+    id: 4,
+    title: "Trang Quản Trị Admin",
+    image: projectImage,
+    description:
+      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
+  },
+  {
+    id: 5,
     title: "Trang Quản Trị Admin",
     image: projectImage,
     description:

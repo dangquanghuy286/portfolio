@@ -11,10 +11,10 @@ import {
 const HeroImage = () => {
   return (
     <div className="mask-gradient relative w-full max-w-[450px] overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] border-[#03a0c5] bg-gray-700 md:h-[660px]">
-      <AnimatedIcon Icon={BiLogoReact} className="left-10 top-24" />
-      <AnimatedIcon Icon={BiLogoCss3} className="left-10 top-60" />
-      <AnimatedIcon Icon={BiLogoTailwindCss} className="right-5 top-30" />
-      <AnimatedIcon Icon={BiLogoJavascript} className="right-5 top-60" />
+      {/* <AnimatedIcon Icon={BiLogoReact} className="left-10 top-15" />
+      <AnimatedIcon Icon={BiLogoCss3} className="left-5 top-40" />
+      <AnimatedIcon Icon={BiLogoTailwindCss} className="right-5 top-20" />
+      <AnimatedIcon Icon={BiLogoJavascript} className="right-5 top-40" /> */}
       <img
         src={userImage}
         alt="user"

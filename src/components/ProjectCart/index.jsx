@@ -5,7 +5,7 @@ import Button from "../Button";
 const ProjectCart = ({ projects, index }) => {
   return (
     <div
-      className="sticky overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+      className="sticky overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out"
       style={{ top: `calc(100px + ${index * 150}px)` }}
     >
       {/* Content Section */}
@@ -23,12 +23,14 @@ const ProjectCart = ({ projects, index }) => {
       </div>
 
       {/* Image Section */}
-      <div className="mt-5 w-full md:w-1/3 md:mt-0">
-        <img
-          src={projects.image}
-          alt={projects.title}
-          className="h-60 w-full rounded-lg object-cover shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:rotate-2"
-        />
+      <div className="mt-5 w-full md:w-1/3 md:mt-0 flex justify-center">
+        <div className="w-full max-w-[300px] h-60">
+          <img
+            src={projects.image}
+            alt={projects.title}
+            className="w-full h-full rounded-lg object-cover shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:rotate-2"
+          />
+        </div>
       </div>
     </div>
   );
