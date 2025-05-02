@@ -8,7 +8,11 @@ const About = () => {
   return (
     <section className="py-14">
       <SectionTitle title="Về tôi" className="mb-6" />
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center  py-4 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center py-4 px-4 sm:px-6 lg:px-8 
+        bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2 border-white/10 dark:border-gray-700 
+        rounded-lg shadow-sm"
+      >
         <div className="flex justify-center">
           <img
             src={aboutImg}
@@ -43,7 +47,6 @@ const About = () => {
                 </span>
               ))}
             </li>
-
             <li>
               <strong>🗣️ Ngôn ngữ:</strong> Tiếng Việt, Tiếng Anh
             </li>

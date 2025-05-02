@@ -4,7 +4,7 @@ import React from "react";
 const ProjectCart = ({ projects, index }) => {
   return (
     <div
-      className="sticky overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-gray-800 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
+      className="sticky overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
       style={{ top: `calc(100px + ${index * 150}px)` }}
     >
       {/* Content Section */}
