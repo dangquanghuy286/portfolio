@@ -1,5 +1,6 @@
 import { projects } from "../../constants";
 import About from "../Abouts";
+import Contact from "../Contacts";
 import Projects from "../Projects";
 import Services from "../Services";
 import Home from "./Home";
@@ -31,6 +32,9 @@ const HomeDefault = ({ menuOpen }) => {
       </div>
       <div className="w-full max-w-7xl px-4 py-2">
         <Services />
+      </div>
+      <div className="w-full max-w-7xl px-4 py-2">
+        <Contact />
       </div>
     </div>
   );

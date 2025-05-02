@@ -81,6 +81,13 @@ export const contactDetails = [
     link: "https://github.com/dangquanghuy286",
     icon: "💻",
   },
+  {
+    id: 5,
+    type: "Địa chỉ",
+    value: "Quảng Nam ,Việt Nam",
+    link: "https://www.google.com/maps/place/Quảng+Nam",
+    icon: "📍",
+  },
 ];
 
 export const words = [

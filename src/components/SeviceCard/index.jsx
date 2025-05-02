@@ -3,7 +3,7 @@ import React from "react";
 const ServicesCard = ({ services }) => {
   return (
     <div
-      className="flex flex-col gap-4 rounded-lg border-2 dark:border-white/10 dark:bg-slate-900 bg-slate-50  
+      className="flex flex-col gap-4 rounded-lg border-2 border-gray-300  dark:border-gray-600 dark:bg-slate-900 bg-slate-50  
       p-6 transition-shadow duration-300 hover:shadow-lg"
     >
       <div className="flex justify-center">
