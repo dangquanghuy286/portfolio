@@ -24,27 +24,6 @@ export const projects = [
     description:
       "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
   },
-  {
-    id: 6,
-    title: "Trang Quản Trị Admin",
-    image: projectImage,
-    description:
-      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
-  },
-  {
-    id: 4,
-    title: "Trang Quản Trị Admin",
-    image: projectImage,
-    description:
-      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
-  },
-  {
-    id: 5,
-    title: "Trang Quản Trị Admin",
-    image: projectImage,
-    description:
-      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
-  },
 ];
 
 export const services = [
