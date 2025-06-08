@@ -9,7 +9,7 @@ export const projects = [
     title: "Website đặt giày",
     image: shoesImage,
     description:
-      "Xây dựng website thương mại điện tử chuyên về giày dép với giao diện hiện đại bằng ReactJS & Tailwind CSS. Tích hợp hệ thống đặt hàng, giỏ hàng, thanh toán trực tuyến. Thiết kế responsive, tối ưu trải nghiệm mua sắm trên mọi thiết bị. Cải thiện UI/UX với hiệu ứng tương tác mượt mà.",
+      "Xây dựng website thương mại điện tử chuyên về giày dép với giao diện hiện đại bằng ReactJS  Tích hợp hệ thống đặt hàng, giỏ hàng, thanh toán trực tuyến. Thiết kế responsive, tối ưu trải nghiệm mua sắm trên mọi thiết bị. Cải thiện UI/UX với hiệu ứng tương tác mượt mà.",
   },
   {
     id: 2,
@@ -95,7 +95,6 @@ export const contactDetails = [
 export const words = [
   "React",
   "TailwindCSS",
-  "TypeScript",
   "JavaScript",
   "HTML5",
   "CSS3",
