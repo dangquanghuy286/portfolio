@@ -1,28 +1,29 @@
 import projectImage from "../assets/project3.png";
 import petImage from "../assets/petshop.png";
+import shoesImage from "../assets/image.png";
 import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 
 export const projects = [
   {
     id: 1,
-    title: "Website chấm trắc nghiệm",
-    image: projectImage,
+    title: "Website đặt giày",
+    image: shoesImage,
     description:
-      "Xây dựng giao diện bằng ReactJS & Tailwind CSSThiết kế hệ thống lưu trữ câu hỏi, bài kiểm tra.Phát triển logic chấm điểm tự động.Tối ưu hiệu suất và xử lý lỗi.Cải thiện UI/UX, nâng cao hiệu suất và trải nghiệm người dùng.",
+      "Xây dựng website thương mại điện tử chuyên về giày dép với giao diện hiện đại bằng ReactJS & Tailwind CSS. Tích hợp hệ thống đặt hàng, giỏ hàng, thanh toán trực tuyến. Thiết kế responsive, tối ưu trải nghiệm mua sắm trên mọi thiết bị. Cải thiện UI/UX với hiệu ứng tương tác mượt mà.",
   },
   {
     id: 2,
     title: "Website Thương Mại Điện Tử",
     image: petImage,
     description:
-      "+Công nghệ: HTML, SCSS, JavaScript, REACTJS .Thiết kế giao diện trực quan, responsive, tối ưu trải nghiệm người dùng trên nhiều thiết bị. Phát triển hiệu ứng UI/UX, cải thiện tính tương tác và thẩm mỹ cho sản phẩm.",
+      "Phát triển website bán hàng trực tuyến với công nghệ HTML, SCSS, JavaScript, ReactJS. Thiết kế giao diện trực quan, responsive, tối ưu trải nghiệm người dùng trên nhiều thiết bị. Phát triển hiệu ứng UI/UX, cải thiện tính tương tác và thẩm mỹ cho sản phẩm.",
   },
   {
     id: 3,
-    title: "Trang Quản Trị Admin",
+    title: "Website Tour du lịch tích hợp AI tư vấn lịch trình",
     image: projectImage,
     description:
-      "Dashboard quản lý dữ liệu, trực quan bằng ReactJS, TailwindCSS và Chart.js, dễ dàng tùy chỉnh và mở rộng.",
+      "Xây dựng nền tảng du lịch thông minh với AI tư vấn lịch trình cá nhân hóa. Phát triển Client-UI và Dashboard quản lý dữ liệu trực quan bằng ReactJS, TailwindCSS và Chart.js. Tích hợp chatbot AI để gợi ý tour, lên kế hoạch chi tiết theo sở thích người dùng.",
   },
 ];
 
