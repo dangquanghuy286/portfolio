@@ -12,17 +12,17 @@ const HomeDefault = ({ menuOpen }) => {
   return (
     <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col items-center overflow-x-clip antialiased">
       {/* Hero Section */}
-      <div className="w-full max-w-7xl px-4 py-16">
+      <div className="w-full max-w-7xl px-4 py-8">
         <Home menuOpen={menuOpen} />
       </div>
 
       {/* Tape Section */}
-      <div className="w-full max-w-7xl px-4 py-16">
+      <div className="w-full max-w-7xl px-4 py-8">
         <Tape />
       </div>
 
       {/* Projects Section */}
-      <div className="w-full max-w-7xl px-4 py-16">
+      <div className="w-full max-w-7xl px-4 py-8">
         <Projects data={limitedProjects} />
       </div>
 

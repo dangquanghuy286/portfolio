@@ -72,8 +72,8 @@ export const contactDetails = [
   {
     id: 3,
     type: "LinkedIn",
-    value: "linkedin.com/in/đặng-huy-356889350",
-    link: "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-huy-356889350/",
+    value: "linkedin.com/dangquanghuy286",
+    link: "https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-h%E1%BB%AFu-quang-huy-356889350/",
     icon: "🔗",
   },
   {
@@ -86,25 +86,36 @@ export const contactDetails = [
   {
     id: 5,
     type: "Địa chỉ",
-    value: "Quảng Nam ,Việt Nam",
+    value: "Đà Nẵng ,Việt Nam",
     link: "https://www.google.com/maps/place/Quảng+Nam",
     icon: "📍",
   },
 ];
 
 export const words = [
-  "React",
-  "TailwindCSS",
-  "JavaScript",
+  // Frontend core
   "HTML5",
   "CSS3",
+  "JavaScript",
+  "React",
+  "NextJs",
+
+  // Styling & UI
+  "TailwindCSS",
   "SASS/SCSS",
-  "Git",
-  "GitHub",
-  "Figma",
   "BootStrap",
   "AntDesign",
   "Responsive Design",
   "UI/UX Basics",
+
+  // Backend & APIs
+  "NodeJs",
+  "ExpressJs",
   "RESTful APIs",
+
+  // Tools
+  "Git",
+  "GitHub",
+  "Figma",
+  "...",
 ];

@@ -1,39 +1,49 @@
 import React, { Fragment } from "react";
+import { motion } from "framer-motion";
 import { words } from "../../constants";
 import { BiLogoMeta } from "react-icons/bi";
 
 const Tape = () => {
   return (
-    <section className="overflow-x-clip py-20 lg:py-24">
-      <div className="-mx-1 -rotate-3 bg-gradient-to-r from-teal-300 to-[#03a0c5]">
-        {/* Vùng chứa chính, có hiệu ứng nghiêng -3 độ và nền gradient từ xanh ngọc đến xanh dương nhạt */}
+    <section className="overflow-x-clip py-24 lg:py-32 relative">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50/30 to-transparent dark:via-blue-950/20"></div>
 
-        <div className="mask-gradient-right animate-scroll flex flex-none gap-4 py-3 pr-4">
-          {/* Vùng hiển thị nội dung cuộn ngang (có animation), flex hàng ngang, có khoảng cách giữa các phần tử */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="relative"
+      >
+        <div className="-mx-1 -rotate-4 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 shadow-2xl">
+          {/* Enhanced gradient with more vibrant colors and shadow */}
 
-          {[...new Array(2)].map((_, index) => (
-            // Trong React, Fragment là một thành phần đặc biệt được sử dụng để gộp nhiều phần tử con lại mà không sinh ra thêm thẻ DOM không cần thiết
-            <Fragment key={index}>
-              {/* Lặp lại toàn bộ dải từ `words` hai lần để tạo hiệu ứng cuộn liên tục */}
+          <div className="mask-gradient-right animate-scroll flex flex-none gap-6 py-4 pr-6">
+            {/* Increased spacing for better readability */}
 
-              {words.map((word, wordIndex) => (
-                <div
-                  key={`${index}-${wordIndex}`}
-                  className="inline-flex items-center gap-4 whitespace-nowrap"
-                >
-                  {/* Mỗi từ là một nhóm gồm từ và biểu tượng Meta, nằm ngang và không xuống dòng */}
-
-                  <span className="text-sm font-extrabold uppercase text-black">
-                    {word}
-                  </span>
-                  <BiLogoMeta className="size-10 -rotate-12 text-black" />
-                  {/* Icon Meta nghiêng 12 độ, kích thước lớn */}
-                </div>
-              ))}
-            </Fragment>
-          ))}
+            {[...new Array(3)].map((_, index) => (
+              <Fragment key={index}>
+                {words.map((word, wordIndex) => (
+                  <motion.div
+                    key={`${index}-${wordIndex}`}
+                    className="inline-flex items-center gap-4 whitespace-nowrap"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <span className="text-base font-black uppercase text-white drop-shadow-lg tracking-wider">
+                      {/* Enhanced typography with white text and drop shadow */}
+                      {word}
+                    </span>
+                    <BiLogoMeta className="size-12 -rotate-12 text-white drop-shadow-lg" />
+                    {/* Larger icon with white color and drop shadow */}
+                  </motion.div>
+                ))}
+              </Fragment>
+            ))}
+          </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

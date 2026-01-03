@@ -4,10 +4,7 @@ import Button from "../Button";
 
 const ProjectCart = ({ projects, index }) => {
   return (
-    <div
-      className="sticky overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out"
-      style={{ top: `calc(100px + ${index * 150}px)` }}
-    >
+    <div className="overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-center gap-6 shadow-lg transition-all duration-300 ease-in-out">
       {/* Content Section */}
       <div className="flex-1 flex flex-col gap-4">
         <h2 className="text-2xl font-semibold text-gray-900 dark:text-white font-space">

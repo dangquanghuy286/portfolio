@@ -6,7 +6,7 @@ import ServicesCard from "../../components/SeviceCard";
 const Services = () => {
   return (
     <section className="py-16">
-      <SectionTitle title="Dịch vụ của tôi" />
+      <SectionTitle title="Giá trị tôi mang lại" />
       <div className="container mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 ">
         {services.map((service, index) => (
           <div key={index}>

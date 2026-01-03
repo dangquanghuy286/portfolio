@@ -8,7 +8,7 @@ import DarkMode from "../DarkMode";
 const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
   return (
     <div
-      className={`fixed left-0 top-0 z-30 h-full w-3/4 transform border-r-2 dark:border-white/15 dark:bg-white/20 px-4 backdrop-blur transition-transform duration-300 bg-slate-900 border-slate-950 ${
+      className={`fixed left-0 top-0 z-900 h-full w-3/4 transform border-r-2 dark:border-white/15 dark:bg-white/20 px-4 backdrop-blur transition-transform duration-300 bg-slate-900 border-slate-950 ${
         menuOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

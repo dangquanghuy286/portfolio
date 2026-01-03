@@ -9,7 +9,7 @@ const Button = ({ children, variant = "primary", className = "" }) => {
 
   return (
     <button
-      className={`${variants[variant]} px-4 py-2 rounded-3xl ${className}`}
+      className={`${variants[variant]} px-4 py-2.5 rounded-3xl ${className}`}
     >
       {children}
     </button>
