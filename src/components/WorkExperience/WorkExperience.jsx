@@ -17,7 +17,7 @@ function WorkExperience() {
         <SectionTitle title="Kinh nghiệm làm việc" className="mb-6" />
 
         <div className="relative max-w-4xl mx-auto">
-          <div className=" md:block absolute left-[11px] top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
+          <div className="md:block absolute left-[11px] top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
 
           {WORK_EXPERIENCES.map((item) => (
             <div
@@ -28,14 +28,14 @@ function WorkExperience() {
               <div className="flex-shrink-0 flex md:block items-start md:items-center">
                 <div
                   className="relative z-10 w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#03a0c5] border-4 border-white dark:border-slate-900 mt-0 md:mt-6
-                                group-hover:scale-110 transition-transform duration-300"
+                  group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
 
               {/* Card */}
               <div
-                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 w-full 
-                              hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ml-4 mr-1"
+                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 w-full
+                hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ml-4 mr-1"
               >
                 {/* Header */}
                 <button
@@ -55,26 +55,31 @@ function WorkExperience() {
                     </div>
 
                     <div>
-                      <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
+                      {/* Role */}
+                      <h3 className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
                         {item.role}
                       </h3>
-                      <p className="text-base md:text-lg text-gray-500 dark:text-gray-400">
+
+                      {/* Company */}
+                      <p className="text-sm md:text-base text-gray-500 dark:text-gray-400">
                         {item.company}
                       </p>
-                      <p className="text-sm md:text-base text-gray-400 dark:text-gray-500 mt-1">
+
+                      {/* Time */}
+                      <p className="text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">
                         {item.time}
                       </p>
                     </div>
                   </div>
 
                   <FaCircleChevronDown
-                    className={`w-6 h-6 mt-2 transition-transform duration-300 
-                                ${
-                                  openId === item.id
-                                    ? "rotate-180 text-[#03a0c5]"
-                                    : "text-gray-400 dark:text-gray-300"
-                                } 
-                                hover:text-[#03a0c5]`}
+                    className={`w-6 h-6 mt-2 transition-transform duration-300
+                      ${
+                        openId === item.id
+                          ? "rotate-180 text-[#03a0c5]"
+                          : "text-gray-400 dark:text-gray-300"
+                      }
+                      hover:text-[#03a0c5]`}
                   />
                 </button>
 
@@ -84,9 +89,9 @@ function WorkExperience() {
                     openId === item.id ? "max-h-96 mt-4" : "max-h-0"
                   }`}
                 >
-                  <ul className="space-y-3 text-base md:text-lg text-gray-600 dark:text-gray-300">
+                  <ul className="space-y-3 text-sm md:text-base text-gray-600 dark:text-gray-300">
                     {item.details.map((text, index) => (
-                      <li key={index} className="flex items-stretch gap-2">
+                      <li key={index} className="flex items-start gap-2">
                         <span className="text-[#03a0c5] mt-1">
                           <FaHandPointRight />
                         </span>
