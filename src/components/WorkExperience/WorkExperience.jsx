@@ -17,7 +17,6 @@ function WorkExperience() {
         <SectionTitle title="Kinh nghiệm làm việc" className="mb-6" />
 
         <div className="relative max-w-4xl mx-auto">
-          {/* Timeline line chỉ hiển thị trên md trở lên */}
           <div className="hidden md:block absolute left-3 top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
 
           {WORK_EXPERIENCES.map((item) => (
