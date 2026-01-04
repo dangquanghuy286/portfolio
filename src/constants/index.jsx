@@ -3,7 +3,7 @@ import petImage from "../assets/thuongmaidientu.jpg";
 import shoesImage from "../assets/image.png";
 import goViet from "../assets/goviet.png";
 import globetrek from "../assets/globetrek.jpg";
-import cnpt from "../assets/cnpt.png";
+import cnpt from "../assets/CNPT.png";
 import themeflat from "../assets/themeflat.png";
 import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 import {
