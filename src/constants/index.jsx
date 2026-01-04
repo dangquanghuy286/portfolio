@@ -20,8 +20,8 @@ export const WORK_EXPERIENCES = [
     id: 1,
     role: "Frontend Developer",
     company: "Themes Flat",
-    logo: themeflat, // hoặc import image
-    time: "08/2025 - 12/2025",
+    logo: themeflat,
+    time: "08/2025 - 01/2026",
     details: [
       "Cắt và triển khai giao diện chuẩn UI/UX từ Figma/Sketch, đảm bảo đúng flow nghiệp vụ và trải nghiệm người dùng.",
       "Phát triển các component ReactJS reusable, tối ưu hiệu năng, và tuân thủ chuẩn code Evonto.",

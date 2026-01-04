@@ -4,7 +4,7 @@ const ServicesCard = ({ services }) => {
   return (
     <div
       className="flex flex-col gap-4 rounded-lg border-2 border-gray-300  dark:border-gray-600 dark:bg-slate-900 bg-slate-50  
-      p-6 transition-shadow duration-300 hover:shadow-lg"
+      p-6 transition-shadow duration-300 hover:shadow-lg h-full"
     >
       <div className="flex justify-center">
         <services.icon

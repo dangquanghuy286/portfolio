@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <section className="py-16">
       <SectionTitle title="Giá trị tôi mang lại" />
-      <div className="container mt-5 grid grid-cols-1 gap-4 md:grid-cols-2 ">
+      <div className="container mt-5 grid grid-cols-1 gap-4 md:grid-cols-2  h-full">
         {services.map((service, index) => (
           <div key={index}>
             <ServicesCard services={service} />

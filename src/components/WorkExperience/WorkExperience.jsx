@@ -17,7 +17,7 @@ function WorkExperience() {
         <SectionTitle title="Kinh nghiệm làm việc" className="mb-6" />
 
         <div className="relative max-w-4xl mx-auto">
-          <div className="hidden md:block absolute left-3 top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
+          <div className=" md:block absolute left-[11px] top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
 
           {WORK_EXPERIENCES.map((item) => (
             <div
@@ -35,7 +35,7 @@ function WorkExperience() {
               {/* Card */}
               <div
                 className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 w-full 
-                              hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                              hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ml-4 mr-1"
               >
                 {/* Header */}
                 <button

@@ -10,7 +10,7 @@ const Home = ({ menuOpen }) => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/40 via-transparent to-purple-50/40 dark:from-blue-950/20 dark:via-transparent dark:to-purple-950/20 rounded-3xl"></div>
 
       <div
-        className={`container max-w-7xl mx-auto transition-all duration-500 ease-out relative z-10 ${
+        className={`container max-w-8xl mx-auto transition-all duration-500 ease-out relative z-10 ${
           menuOpen ? "px-10 blur-sm scale-95" : "px-4 sm:px-6 lg:px-8"
         }`}
       >
