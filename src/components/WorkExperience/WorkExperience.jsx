@@ -12,7 +12,7 @@ function WorkExperience() {
   };
 
   return (
-    <section className="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <section className="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300 shadow-lg border-2 border-gray-300 dark:border-gray-600 rounded-lg">
       <div className="container mx-auto px-4">
         <SectionTitle title="Kinh nghiệm làm việc" className="mb-6" />
 
