@@ -1,3 +1,4 @@
+import WorkExperience from "../../components/WorkExperience/WorkExperience";
 import { projects } from "../../constants";
 import About from "../Abouts";
 import Contact from "../Contacts";
@@ -29,6 +30,9 @@ const HomeDefault = ({ menuOpen }) => {
       {/* About Section */}
       <div className="w-full max-w-7xl px-4 py-2">
         <About />
+      </div>
+      <div className="w-full max-w-7xl px-4 py-2">
+        <WorkExperience />
       </div>
       <div className="w-full max-w-7xl px-4 py-2">
         <Services />

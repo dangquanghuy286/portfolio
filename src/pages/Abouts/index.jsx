@@ -1,31 +1,38 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { motion } from "framer-motion"; // Thư viện dùng để tạo animation
+import { motion } from "framer-motion";
 import SectionTitle from "../../components/SectionTitle";
 import aboutImg from "../../assets/about.jpg";
 import Button from "../../components/Button";
 import { words } from "../../constants";
+
+// Import icon từ react-icons
+import {
+  HiOutlineMail,
+  HiOutlineLocationMarker,
+  HiOutlineCode,
+  HiOutlineTranslate,
+} from "react-icons/hi";
 
 const About = () => {
   return (
     <section className="py-14">
       <SectionTitle title="Về tôi" className="mb-6" />
 
-      {/* Khối bao toàn bộ phần nội dung giới thiệu */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }} // Bắt đầu ẩn và trượt xuống 50px
-        whileInView={{ opacity: 1, y: 0 }} // Khi cuộn tới, hiện ra và trượt về đúng vị trí
-        transition={{ duration: 0.8, ease: "easeOut" }} // Animation kéo dài 0.8s, mượt dần
-        viewport={{ once: true }} // Chỉ animate 1 lần khi phần tử vào khung nhìn
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
         className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center py-8 px-4 sm:px-6 lg:px-8 
         bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2 border-gray-300 dark:border-gray-600
         rounded-lg shadow-sm"
       >
         {/* Hình ảnh đại diện */}
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }} // Bắt đầu nhỏ hơn 1 chút và ẩn
-          whileInView={{ scale: 1, opacity: 1 }} // Phóng to về kích thước thật và hiện rõ
-          transition={{ duration: 0.6, delay: 0.2 }} // Animation kéo dài 0.6s, trễ 0.2s
+          initial={{ scale: 0.95, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="flex justify-center"
         >
           <img
@@ -37,9 +44,9 @@ const About = () => {
 
         {/* Phần thông tin chi tiết */}
         <motion.div
-          initial={{ x: 100, opacity: 0 }} // Bắt đầu lệch sang phải và ẩn
-          whileInView={{ x: 0, opacity: 1 }} // Trượt vào từ bên phải và hiện ra
-          transition={{ duration: 0.6, delay: 0.3 }} // Animation kéo dài 0.6s, trễ 0.3s
+          initial={{ x: 20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-900 dark:text-white">
             Đặng Hữu Quang Huy
@@ -50,14 +57,23 @@ const About = () => {
             tại Đại học Duy Tân.
           </p>
           <ul className="text-sm sm:text-base text-gray-600 dark:text-gray-400 space-y-2 mb-5">
-            <li>
-              <strong>📧 Email:</strong> huydang2806@gmail.com
+            <li className="flex items-center gap-2">
+              <HiOutlineMail className="text-xl text-gray-800 dark:text-gray-200" />
+              <span>
+                <strong>Email:</strong> huydang2806@gmail.com
+              </span>
             </li>
-            <li>
-              <strong>📍 Địa chỉ:</strong> Đà Nẵng, Việt Nam
+            <li className="flex items-center gap-2">
+              <HiOutlineLocationMarker className="text-xl text-gray-800 dark:text-gray-200" />
+              <span>
+                <strong>Địa chỉ:</strong> Đà Nẵng, Việt Nam
+              </span>
             </li>
             <li className="flex flex-wrap items-center gap-2">
-              <strong className="w-full">💻 Kỹ năng:</strong>
+              <HiOutlineCode className="text-xl text-gray-800 dark:text-gray-200" />
+              <span>
+                <strong className="w-full">Kỹ năng:</strong>
+              </span>
               {words.map((skill, index) => (
                 <span
                   key={index}
@@ -67,11 +83,13 @@ const About = () => {
                 </span>
               ))}
             </li>
-            <li>
-              <strong>🗣️ Ngôn ngữ:</strong> Tiếng Việt, Tiếng Anh
+            <li className="flex items-center gap-2">
+              <HiOutlineTranslate className="text-xl text-gray-800 dark:text-gray-200" />
+              <span>
+                <strong>Ngôn ngữ:</strong> Tiếng Việt, Tiếng Anh
+              </span>
             </li>
           </ul>
-          <Button className="mt-2">Tuyển tôi</Button>
         </motion.div>
       </motion.div>
     </section>

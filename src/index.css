@@ -57,11 +57,6 @@
     animation: scroll 40s linear infinite; /* Áp dụng animation "scroll" trong 20 giây, tuyến tính, lặp vô hạn */
     display: inline-flex; /* Hiển thị phần tử dưới dạng flex nằm ngang */
     width: max-content; /* Chiều rộng tự động theo nội dung lớn nhất */
-    will-change: transform;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translateZ(0);
   }
 }
 @layer utilities {

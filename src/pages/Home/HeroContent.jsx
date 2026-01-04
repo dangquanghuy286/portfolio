@@ -118,7 +118,7 @@ function HeroContent() {
             className="text-2xl font-bold text-transparent bg-gradient-to-r 
                          from-blue-500 to-purple-500 bg-clip-text"
           >
-            3+
+            6+
           </div>
           <div className="text-sm text-gray-600 dark:text-gray-400">
             Dự án hoàn thành

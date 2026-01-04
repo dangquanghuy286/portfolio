@@ -8,7 +8,7 @@ const Projects = () => {
     <section className="py-16">
       <SectionTitle title="Dự án của tôi" />
       <div className="container mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {projects.map((project, index) => (
             <ProjectCart
               key={project.id || index}

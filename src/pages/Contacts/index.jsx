@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { motion } from "framer-motion"; // Import thư viện tạo hiệu ứng
+import { motion } from "framer-motion";
 import SectionTitle from "../../components/SectionTitle";
 import contactImg from "../../assets/contact.svg";
 import { contactDetails } from "../../constants";
@@ -11,20 +11,19 @@ const Contact = () => {
     <section className="py-14">
       <SectionTitle title="Liên hệ tôi" className="mb-6" />
 
-      {/* Khối chứa toàn bộ nội dung liên hệ */}
       <motion.div
-        initial={{ opacity: 0, y: 50 }} // Bắt đầu ẩn và trượt xuống 50px
-        whileInView={{ opacity: 1, y: 0 }} // Khi cuộn đến, hiện ra và trượt về đúng vị trí
-        transition={{ duration: 0.8, ease: "easeOut" }} // Animation kéo dài 0.8s, mượt dần
-        viewport={{ once: true }} // Chỉ thực hiện animation 1 lần khi vào khung nhìn
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
         className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-2 border-gray-200 dark:border-gray-600 
         rounded-lg bg-slate-50 dark:bg-gray-900 p-6 sm:p-8 transition-colors duration-300 shadow-sm"
       >
         {/* Ảnh minh hoạ phần liên hệ */}
         <motion.div
-          initial={{ scale: 0.9, opacity: 0 }} // Bắt đầu nhỏ và mờ
-          whileInView={{ scale: 1, opacity: 1 }} // Hiện rõ và trở về kích thước thật
-          transition={{ duration: 0.6, delay: 0.2 }} // Trễ 0.2s, kéo dài 0.6s
+          initial={{ scale: 0.95, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="flex justify-center"
         >
           <img
@@ -36,9 +35,9 @@ const Contact = () => {
 
         {/* Nội dung liên hệ và danh sách chi tiết */}
         <motion.div
-          initial={{ x: 100, opacity: 0 }} // Bắt đầu lệch phải và ẩn
-          whileInView={{ x: 0, opacity: 1 }} // Trượt vào từ phải và hiện ra
-          transition={{ duration: 0.6, delay: 0.3 }} // Trễ 0.3s, kéo dài 0.6s
+          initial={{ x: 20, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col gap-6"
         >
           <div className="flex flex-col gap-3">
@@ -49,9 +48,10 @@ const Contact = () => {
               Nếu bạn có thắc mắc hoặc câu hỏi, hãy liên hệ với tôi!
             </p>
           </div>
+
           <div className="flex flex-col gap-4">
-            {contactDetails.map((contact, index) => (
-              <ContactDetailCard key={contact.id || index} contact={contact} />
+            {contactDetails.map((contact) => (
+              <ContactDetailCard key={contact.id} contact={contact} />
             ))}
           </div>
         </motion.div>
