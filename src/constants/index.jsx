@@ -5,6 +5,7 @@ import goViet from "../assets/goviet.png";
 import globetrek from "../assets/globetrek.jpg";
 import cnpt from "../assets/CNPT.png";
 import themeflat from "../assets/themeflat.png";
+import chatbot from "../assets/chatbox.png";
 import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 import {
   HiOutlineMail,
@@ -68,13 +69,14 @@ export const projects = [
     title: "Website Tour Du Lịch Tích Hợp AI Tư Vấn Lịch Trình",
     image: goViet,
     description:
-      "Xây dựng nền tảng du lịch thông minh với AI tư vấn lịch trình cá nhân hóa. Phát triển Client-UI và Dashboard quản lý dữ liệu trực quan bằng ReactJS, TailwindCSS và Chart.js. Tích hợp chatbot AI gợi ý tour, lập kế hoạch chi tiết theo sở thích người dùng và hỗ trợ thanh toán trực tuyến qua VNPay.",
+      "Phát triển nền tảng du lịch thông minh tích hợp AI tư vấn lịch trình cá nhân hóa. Ứng dụng Gemini API để phân tích nhu cầu, gợi ý tour và xây dựng kế hoạch chi tiết theo sở thích người dùng. Sử dụng n8n để tự động hóa luồng xử lý dữ liệu, kết nối chatbot AI, quản lý booking và gửi thông báo. Xây dựng Client-UI và Dashboard quản trị bằng ReactJS, TailwindCSS, Chart.js; tích hợp thanh toán trực tuyến qua VNPay.",
     link: "https://github.com/dangquanghuy286/BookTour.git",
   },
+
   {
     id: 4,
     title: "Realtime Chatbox Application",
-    image: projectImage,
+    image: chatbot,
     description:
       "Xây dựng ứng dụng chat thời gian thực với giao diện hiện đại. Phát triển Client UI bằng ReactJS, shadcn/ui và Backend bằng Node.js. Tích hợp Socket.IO cho nhắn tin realtime, hỗ trợ gửi/nhận tin nhắn tức thì, trạng thái online và mang lại trải nghiệm người dùng mượt mà.",
     link: "https://github.com/dangquanghuy286/FullReact_NodeJs.git",
