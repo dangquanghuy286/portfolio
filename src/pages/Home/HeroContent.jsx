@@ -33,12 +33,11 @@ function HeroContent() {
         transition={{ duration: 0.6, delay: 0.4 }}
         className="text-4xl lg:text-6xl font-bold leading-tight"
       >
-        <span className="text-gray-900 dark:text-white">Software</span>
-        <br />
-        <span className="text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text">
-          Engineer
-        </span>
-        <span className="text-gray-900 dark:text-white">...!</span>
+        <img
+          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
+          alt="Typing SVG"
+          className=""
+        />
       </motion.h2>
 
       <motion.p
