@@ -5,7 +5,7 @@ import goViet from "../assets/goviet.png";
 import globetrek from "../assets/globetrek.jpg";
 import cnpt from "../assets/CNPT.png";
 import themeflat from "../assets/themeflat.png";
-import chatbot from "../assets/chatbox.png";
+import chatbot from "../assets/ChatAPP.png";
 import { BiBrain, BiCodeAlt, BiPalette, BiRocket } from "react-icons/bi";
 import {
   HiOutlineMail,
@@ -62,7 +62,7 @@ export const projects = [
     image: petImage,
     description:
       "Xây dựng website thương mại điện tử lĩnh vực thuê nhà bằng HTML, SCSS, JavaScript kết hợp Bootstrap và WOW.js. Thiết kế giao diện responsive, tối ưu hiển thị đa thiết bị. Tích hợp animation khi scroll nhằm cải thiện UI/UX và tăng mức độ tương tác người dùng.",
-    link: "https://github.com/dangquanghuy286/homelengo-01.git",
+    link: "https://github.com/dangquanghuy286/homelengo-quanghuy.git",
   },
   {
     id: 3,
