@@ -1,7 +1,7 @@
-import projectImage from "../assets/project3.png";
+import projectImage from "../assets/dashboard.png";
 import petImage from "../assets/thuongmaidientu.jpg";
 import shoesImage from "../assets/image.png";
-import goViet from "../assets/goviet.png";
+import goViet from "../assets/govietapp.png";
 import globetrek from "../assets/globetrek.jpg";
 import cnpt from "../assets/CNPT.png";
 import themeflat from "../assets/themeflat.png";
@@ -24,11 +24,11 @@ export const WORK_EXPERIENCES = [
     logo: themeflat,
     time: "08/2025 - 01/2026",
     details: [
-      "Cắt và triển khai giao diện chuẩn UI/UX từ Figma/Sketch, đảm bảo đúng flow nghiệp vụ và trải nghiệm người dùng.",
-      "Phát triển các component ReactJS reusable, tối ưu hiệu năng, và tuân thủ chuẩn code Evonto.",
-      "Tích hợp API từ backend và đảm bảo dữ liệu hiển thị realtime, chính xác và mượt mà.",
-      "Tối ưu responsive trên đa thiết bị và trình duyệt, nâng cao trải nghiệm người dùng.",
-      "Thực hiện code review, refactor và áp dụng best practices để duy trì chất lượng frontend.",
+      "Chuyển đổi thiết kế Figma/Sketch thành giao diện ReactJS chuẩn pixel-perfect.",
+      "Xây dựng các reusable components, tối ưu khả năng tái sử dụng và bảo trì mã nguồn.",
+      "Tích hợp RESTful APIs, xử lý dữ liệu realtime và tối ưu trải nghiệm người dùng.",
+      "Đảm bảo responsive trên Desktop, Tablet và Mobile theo chuẩn UI/UX.",
+      "Thực hiện code review, refactor và tối ưu hiệu năng theo coding standards.",
     ],
   },
   {
@@ -38,11 +38,11 @@ export const WORK_EXPERIENCES = [
     logo: cnpt,
     time: "05/2025 - 07/2025",
     details: [
-      "Tham gia full quy trình phát triển FE: từ nhận thiết kế, cắt giao diện chuẩn UI/UX, đến triển khai đúng flow nghiệp vụ.",
-      "Phát triển các component ReactJS/TailwindCSS reusable, tối ưu performance, và tuân thủ chuẩn code của công ty.",
-      "Tích hợp API backend, đảm bảo dữ liệu hiển thị realtime, chính xác và mượt mà trên ứng dụng.",
-      "Triển khai responsive trên đa thiết bị và trình duyệt, nâng cao trải nghiệm người dùng.",
-      "Tham gia code review, refactor, và áp dụng best practices để đảm bảo chất lượng FE cao.",
+      "Phát triển giao diện người dùng bằng ReactJS, TailwindCSS theo thiết kế Figma.",
+      "Xây dựng reusable components và tối ưu hiệu suất hiển thị.",
+      "Tích hợp API từ Backend, xử lý dữ liệu động và đồng bộ trạng thái ứng dụng.",
+      "Triển khai responsive đa thiết bị và cải thiện trải nghiệm người dùng.",
+      "Tham gia code review, sửa lỗi và tối ưu chất lượng mã nguồn.",
     ],
   },
 ];
@@ -50,51 +50,51 @@ export const WORK_EXPERIENCES = [
 export const projects = [
   {
     id: 1,
-    title: "Website đặt giày",
+    title: "Shoe Store E-Commerce",
     image: shoesImage,
     description:
-      "Xây dựng website thương mại điện tử chuyên về giày dép với giao diện hiện đại bằng ReactJS  Tích hợp hệ thống đặt hàng, giỏ hàng, thanh toán trực tuyến. Thiết kế responsive, tối ưu trải nghiệm mua sắm trên mọi thiết bị. Cải thiện UI/UX với hiệu ứng tương tác mượt mà.",
+      "Phát triển website thương mại điện tử bán giày bằng ReactJS với giao diện hiện đại và responsive. Xây dựng các chức năng quản lý sản phẩm, giỏ hàng, đặt hàng và thanh toán. Tối ưu UI/UX, cải thiện hiệu suất tải trang và mang đến trải nghiệm mua sắm mượt mà trên nhiều thiết bị.",
     link: "https://github.com/khaipro09/ShoeStore",
   },
   {
     id: 2,
-    title: "Website Thương Mại Điện Tử Thuê Nhà",
+    title: "Home Rental Website",
     image: petImage,
     description:
-      "Xây dựng website thương mại điện tử lĩnh vực thuê nhà bằng HTML, SCSS, JavaScript kết hợp Bootstrap và WOW.js. Thiết kế giao diện responsive, tối ưu hiển thị đa thiết bị. Tích hợp animation khi scroll nhằm cải thiện UI/UX và tăng mức độ tương tác người dùng.",
+      "Phát triển website giới thiệu và thuê nhà bằng HTML, SCSS, JavaScript và Bootstrap. Thiết kế giao diện responsive, tối ưu trải nghiệm người dùng với hiệu ứng animation từ WOW.js và xây dựng bố cục trực quan, thân thiện trên mọi thiết bị.",
     link: "https://github.com/dangquanghuy286/homelengo-quanghuy.git",
   },
   {
     id: 3,
-    title: "Website Tour Du Lịch Tích Hợp AI Tư Vấn Lịch Trình",
+    title: "AI Travel Booking Platform",
     image: goViet,
     description:
-      "Phát triển nền tảng du lịch thông minh tích hợp AI tư vấn lịch trình cá nhân hóa. Ứng dụng Gemini API để phân tích nhu cầu, gợi ý tour và xây dựng kế hoạch chi tiết theo sở thích người dùng. Sử dụng n8n để tự động hóa luồng xử lý dữ liệu, kết nối chatbot AI, quản lý booking và gửi thông báo. Xây dựng Client-UI và Dashboard quản trị bằng ReactJS, TailwindCSS, Chart.js; tích hợp thanh toán trực tuyến qua VNPay.",
+      "Phát triển nền tảng đặt tour du lịch tích hợp AI bằng ReactJS, TailwindCSS và Spring Boot. Tích hợp Gemini AI để tư vấn lịch trình cá nhân hóa, n8n để tự động hóa quy trình, chatbot AI hỗ trợ khách hàng và thanh toán trực tuyến qua VNPay. Xây dựng Dashboard quản trị với Chart.js giúp theo dõi doanh thu, booking và hiệu suất tour theo thời gian thực.",
     link: "https://github.com/dangquanghuy286/BookTour.git",
   },
 
   {
     id: 4,
-    title: "Realtime Chatbox Application",
+    title: "Realtime Chat Application",
     image: chatbot,
     description:
-      "Xây dựng ứng dụng chat thời gian thực với giao diện hiện đại. Phát triển Client UI bằng ReactJS, shadcn/ui và Backend bằng Node.js. Tích hợp Socket.IO cho nhắn tin realtime, hỗ trợ gửi/nhận tin nhắn tức thì, trạng thái online và mang lại trải nghiệm người dùng mượt mà.",
+      "Xây dựng ứng dụng nhắn tin thời gian thực bằng ReactJS, Node.js, Express và Socket.IO. Phát triển giao diện với shadcn/ui, hỗ trợ gửi và nhận tin nhắn tức thì, trạng thái online, xác thực người dùng và mang lại trải nghiệm trò chuyện mượt mà.",
     link: "https://github.com/dangquanghuy286/FullReact_NodeJs.git",
   },
   {
     id: 5,
-    title: "Website Tour Du Lịch Tích Hợp AI",
+    title: "AI Travel Booking - Admin Dashboard",
     image: projectImage,
     description:
-      "Phát triển website đặt tour du lịch tích hợp AI tư vấn lịch trình cá nhân hóa. Xây dựng Client-UI và dashboard quản trị bằng ReactJS và TailwindCSS, trực quan hóa dữ liệu với Chart.js như doanh thu, số lượng booking và hiệu suất tour. Tích hợp chatbot AI hỗ trợ gợi ý tour và thanh toán trực tuyến qua VNPay.",
+      "Xây dựng Dashboard quản trị cho hệ thống đặt tour du lịch tích hợp AI bằng ReactJS, TailwindCSS và Ant Design. Thiết kế giao diện quản trị hiện đại với thống kê doanh thu, booking, khách hàng và hiệu suất tour thông qua Chart.js. Phát triển các chức năng quản lý tour, danh mục, đơn đặt tour, người dùng, thanh toán VNPay, chatbot AI và phân quyền quản trị (Admin/Staff).",
     link: "https://github.com/dangquanghuy286/DASHBOARD.git",
   },
   {
     id: 6,
-    title: "Website Tour Du Lịch Globetrek",
+    title: "GlobeTrek Travel Website",
     image: globetrek,
     description:
-      "Chỉnh sửa và nâng cấp giao diện website tour du lịch Globetrek sử dụng HTML, SCSS, JavaScript và Bootstrap. Tối ưu layout responsive, cải thiện UI/UX và hiệu ứng animation với WOW.js. Tích hợp Google Maps API để hiển thị vị trí và điểm đến du lịch trực quan.",
+      "Nâng cấp và tối ưu giao diện website du lịch GlobeTrek bằng HTML, SCSS, JavaScript và Bootstrap. Cải thiện UI/UX, tối ưu responsive trên đa thiết bị, bổ sung hiệu ứng animation và tích hợp Google Maps API để hiển thị vị trí và điểm đến trực quan.",
     link: "https://github.com/dangquanghuy286/globetrek.git",
   },
 ];
@@ -164,29 +164,24 @@ export const contactDetails = [
   },
 ];
 export const words = [
-  // Frontend core
   "HTML5",
   "CSS3",
-  "JavaScript",
-  "React",
-  "NextJs",
-
-  // Styling & UI
-  "TailwindCSS",
-  "SASS/SCSS",
-  "BootStrap",
-  "AntDesign",
+  "JavaScript (ES6+)",
+  "TypeScript",
+  "ReactJS",
+  "Next.js",
+  "Redux Toolkit",
+  "Tailwind CSS",
+  "SCSS",
+  "Bootstrap",
+  "Ant Design",
   "Responsive Design",
-  "UI/UX Basics",
-
-  // Backend & APIs
-  "NodeJs",
-  "ExpressJs",
-  "RESTful APIs",
-
-  // Tools
+  "Node.js",
+  "Express.js",
+  "REST API",
+  "Socket.IO",
+  "Chart.js",
   "Git",
   "GitHub",
   "Figma",
-  "...",
 ];
