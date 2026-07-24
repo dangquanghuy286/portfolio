@@ -22,7 +22,7 @@ export const WORK_EXPERIENCES = [
     role: "Frontend Developer",
     company: "Themes Flat",
     logo: themeflat,
-    time: "08/2025 - 01/2026",
+    time: "08/2025 - 03/2026",
     details: [
       "Chuyển đổi thiết kế Figma/Sketch thành giao diện ReactJS chuẩn pixel-perfect.",
       "Xây dựng các reusable components, tối ưu khả năng tái sử dụng và bảo trì mã nguồn.",
