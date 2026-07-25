@@ -24,7 +24,6 @@ function WorkExperience() {
               key={item.id}
               className="relative flex flex-col md:flex-row gap-6 mb-10 group transition-all duration-300"
             >
-              {/* Dot */}
               <div className="flex-shrink-0 flex md:block items-start md:items-center">
                 <div
                   className="relative z-10 w-5 h-5 md:w-6 md:h-6 rounded-full bg-[#03a0c5] border-4 border-white dark:border-slate-900 mt-0 md:mt-6
