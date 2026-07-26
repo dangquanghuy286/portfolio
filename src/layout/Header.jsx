@@ -12,7 +12,6 @@ const Header = ({ menuOpen, isMenuOpen }) => {
     <>
       <header className="fixed top-0 left-0 right-0  w-full px-4 py-4 z-50">
         <nav className="w-full max-w-7xl mx-auto dark:text-white text-black flex items-center justify-between rounded-full border-2 border-gray-200 dark:border-white/10 bg-white/5 p-2 backdrop-blur">
-          {/* Logo Section */}
           <div className="flex items-center">
             <Logo />
           </div>
@@ -26,11 +25,11 @@ const Header = ({ menuOpen, isMenuOpen }) => {
                     {link.text}
                   </NavLink>
                 </li>
-              ))
+              )),
             )}
           </ul>
 
-          {/* Right Section: Dark Mode & Button */}
+          {/* Dark Mode & Button */}
           <div className="flex items-center justify-between gap-4">
             <div className="hidden md:block">
               <DarkMode />
