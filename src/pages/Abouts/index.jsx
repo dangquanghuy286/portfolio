@@ -6,7 +6,6 @@ import aboutImg from "../../assets/about.jpg";
 import Button from "../../components/Button";
 import { words } from "../../constants";
 
-// Import icon từ react-icons
 import {
   HiOutlineMail,
   HiOutlineLocationMarker,
@@ -28,7 +27,6 @@ const About = () => {
         bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2 border-gray-300 dark:border-gray-600
         rounded-lg shadow-sm"
       >
-        {/* Hình ảnh đại diện */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
