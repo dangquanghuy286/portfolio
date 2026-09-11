@@ -5,15 +5,15 @@ import Button from "../../components/Button";
 function HeroContent() {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -50 }}
+      initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className="text-left space-y-6 md:max-w-lg lg:max-w-2xl"
     >
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        transition={{ duration: 0.35, delay: 0.1, ease: "easeOut" }}
         className="space-y-2"
       >
         <p
@@ -28,22 +28,22 @@ function HeroContent() {
       </motion.div>
 
       <motion.h2
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.35, delay: 0.2, ease: "easeOut" }}
         className="text-4xl lg:text-6xl font-bold leading-tight"
       >
         <img
           src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
           alt="Typing SVG"
-          className=""
+          className="max-w-full h-auto"
         />
       </motion.h2>
 
       <motion.p
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.35, delay: 0.3, ease: "easeOut" }}
         className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-md"
       >
         Đam mê xây dựng các giải pháp phần mềm
@@ -55,9 +55,9 @@ function HeroContent() {
       </motion.p>
 
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.8 }}
+        transition={{ duration: 0.35, delay: 0.4, ease: "easeOut" }}
         className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4"
       >
         <Button className="group">
@@ -107,9 +107,9 @@ function HeroContent() {
 
       {/* Stats */}
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 1 }}
+        transition={{ duration: 0.35, delay: 0.5, ease: "easeOut" }}
         className="flex items-center gap-8 pt-8 border-t border-gray-200 dark:border-gray-700"
       >
         <div className="text-center">

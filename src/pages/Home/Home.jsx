@@ -15,21 +15,16 @@ const Home = ({ menuOpen }) => {
         }`}
       >
         <div className="relative flex flex-col-reverse w-full md:flex-row items-center justify-between min-h-[80vh] gap-12">
-          {/* HeroContent with enhanced animations */}
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="z-10 w-full md:w-1/2"
-          >
+          {/* HeroContent tự có animation riêng bên trong, ở đây không animate x nữa để tránh chồng chuyển động */}
+          <div className="z-10 w-full md:w-1/2">
             <HeroContent />
-          </motion.div>
+          </div>
 
-          {/* HeroImage with enhanced animations */}
+          {/* HeroImage - animation nhẹ, chỉ 1 lớp animate duy nhất */}
           <motion.div
-            initial={{ opacity: 0, x: 60, scale: 0.9 }}
-            animate={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
             className="w-full md:w-1/2"
           >
             <HeroImage />
