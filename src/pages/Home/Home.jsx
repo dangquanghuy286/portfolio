@@ -6,7 +6,6 @@ import HeroImage from "./HeroImage";
 const Home = ({ menuOpen }) => {
   return (
     <section className="overflow-hidden relative">
-      {/* Background decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-50/40 via-transparent to-purple-50/40 dark:from-blue-950/20 dark:via-transparent dark:to-purple-950/20 rounded-3xl"></div>
 
       <div
