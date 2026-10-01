@@ -80,7 +80,7 @@ function HeroContent() {
         </Button>
 
         <a
-          href="./DangHuuQuangHuy_Front_End.pdf"
+          href="./DangHuuQuangHuy_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
