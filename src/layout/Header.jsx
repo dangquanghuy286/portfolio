@@ -29,7 +29,6 @@ const Header = ({ menuOpen, isMenuOpen }) => {
             )}
           </ul>
 
-          {/* Dark Mode & Button */}
           <div className="flex items-center justify-between gap-4">
             <div className="hidden md:block">
               <DarkMode />
@@ -39,7 +38,6 @@ const Header = ({ menuOpen, isMenuOpen }) => {
             </div>
           </div>
 
-          {/* Mobile Menu Toggle Button */}
           <button
             className="text-4xl dark:text-white md:hidden"
             onClick={() => isMenuOpen(!menuOpen)}
