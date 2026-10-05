@@ -17,11 +17,9 @@ const Tape = () => {
         className="relative"
       >
         <div className="-mx-[20%] -rotate-4 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 shadow-2xl [backface-visibility:hidden] will-change-transform">
-          {/* Enhanced gradient with more vibrant colors and shadow */}
-          {/* -mx-[15%] kéo băng tràn ra 2 bên để góc xoay không bao giờ lộ ra khi bị clip */}
-
+          {/* Enhanced */}
           <div className="mask-gradient-right animate-scroll flex flex-none gap-6 py-4 pr-6">
-            {/* Increased spacing for better readability */}
+            {/* Increased */}
 
             {[...new Array(3)].map((_, index) => (
               <Fragment key={index}>
