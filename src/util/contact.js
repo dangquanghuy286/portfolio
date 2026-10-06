@@ -1,4 +1,4 @@
-import { contactDetails } from "../constants"; // chỉnh lại đường dẫn cho đúng với project của bạn
+import { contactDetails } from "../constants";
 
 export const openContactMail = () => {
   const email = contactDetails.find((c) => c.type === "Email")?.value;
