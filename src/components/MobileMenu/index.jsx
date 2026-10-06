@@ -4,6 +4,7 @@ import Logo from "../Logo";
 import { NavLink } from "react-router-dom";
 import Button from "../Button";
 import DarkMode from "../DarkMode";
+import { openContactMail } from "../../util/contact";
 
 const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
   return (
@@ -30,10 +31,10 @@ const MobileMenu = ({ isMenuOpen, menuOpen, menu }) => {
                 {link.text}
               </NavLink>{" "}
             </li>
-          ))
+          )),
         )}
       </ul>
-      <Button variant="outline" className="mt-5 py-2">
+      <Button variant="outline" className="mt-5 py-2" onClick={openContactMail}>
         Liên hệ với tôi
       </Button>
     </div>

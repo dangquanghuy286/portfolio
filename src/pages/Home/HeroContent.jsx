@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
+import { openContactMail } from "../../util/contact";
 
 function HeroContent() {
   return (
@@ -60,7 +61,7 @@ function HeroContent() {
         transition={{ duration: 0.35, delay: 0.4, ease: "easeOut" }}
         className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4"
       >
-        <Button className="group">
+        <Button className="group" onClick={openContactMail}>
           <span className="flex items-center gap-2">
             Liên hệ với tôi
             <svg

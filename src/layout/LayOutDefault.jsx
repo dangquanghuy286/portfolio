@@ -5,6 +5,7 @@ import BackToTop from "../components/BackToTop/BackToTop";
 
 const LayOutDefault = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const currentYear = new Date().getFullYear();
 
   return (
     <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col">
@@ -21,7 +22,7 @@ const LayOutDefault = () => {
       {/* Footer */}
       <footer className="w-full bg-slate-200 dark:bg-slate-900 text-center">
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          © 2026 Đặng Hữu Quang Huy. All rights reserved.
+          © {currentYear} Đặng Hữu Quang Huy. All rights reserved.
         </p>
       </footer>
     </div>
