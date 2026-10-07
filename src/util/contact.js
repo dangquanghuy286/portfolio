@@ -6,7 +6,7 @@ export const openContactMail = () => {
 
   const subject = encodeURIComponent("Liên hệ từ Portfolio");
   const body = encodeURIComponent(
-    "Xin chào Huy,\n\nTôi muốn trao đổi với bạn về...",
+    "Xin chào Huy,\n\nTôi muốn trao đổi với bạn về công việc sắp tới ...",
   );
 
   window.open(
