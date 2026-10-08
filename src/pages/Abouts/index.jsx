@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import SectionTitle from "../../components/SectionTitle";
-import aboutImg from "../../assets/about.jpg";
 import { words as skills } from "../../constants";
 
 import {
@@ -11,6 +10,8 @@ import {
 } from "react-icons/hi";
 
 const iconClass = "text-xl shrink-0 text-gray-800 dark:text-gray-200";
+
+const aboutGif = "https://media0.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif";
 
 const About = () => {
   return (
@@ -33,12 +34,24 @@ const About = () => {
           viewport={{ once: true }}
           className="flex justify-center"
         >
-          <img
-            src={aboutImg}
-            alt="Ảnh đại diện của Đặng Hữu Quang Huy"
-            loading="lazy"
-            className="rounded-full shadow-lg w-40 sm:w-52 md:w-60 aspect-square object-cover border-2 border-black"
-          />
+          {/* Khung GIF */}
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
+            {/* Vầng sáng mờ phía sau */}
+            <div className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] opacity-40 blur-xl dark:from-blue-500 dark:to-cyan-400 dark:opacity-30" />
+
+            {/* Viền gradient */}
+            <div className="relative rounded-2xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] p-[5px] shadow-xl dark:from-blue-500 dark:to-cyan-400">
+              {/* Lớp ngăn giữa viền và GIF */}
+              <div className="rounded-xl bg-[#f7fbe9] p-1.5 dark:bg-slate-900">
+                <img
+                  src={aboutGif}
+                  alt="Ảnh động giới thiệu Đặng Hữu Quang Huy"
+                  loading="lazy"
+                  className="block h-auto w-full rounded-[10px]"
+                />
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
@@ -97,7 +110,7 @@ const About = () => {
             <li className="flex items-center gap-2">
               <HiOutlineTranslate className={iconClass} />
               <span>
-                <strong>Ngôn ngữ:</strong> Tiếng Việt, Tiếng Anh
+                <strong>Ngôn ngữ:</strong> Tiếng Việt, Tiếng Anh , Tiếng Nhật
               </span>
             </li>
           </ul>
