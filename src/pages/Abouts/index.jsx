@@ -23,7 +23,7 @@ const About = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
         className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center py-8 px-4 sm:px-6 lg:px-8
-        bg-slate-50 dark:bg-slate-900 transition-colors duration-300 border-2 border-gray-300 dark:border-gray-600
+        bg-[#f7fbe9] dark:bg-slate-900 transition-colors duration-300 border-2 border-gray-300 dark:border-gray-600
         rounded-lg shadow-sm"
       >
         <motion.div

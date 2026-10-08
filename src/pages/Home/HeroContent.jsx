@@ -24,7 +24,7 @@ function HeroContent() {
         >
           👋 Xin chào, tôi là
         </p>
-        <h1 className="text-2xl font-bold text-[#03a0c5] dark:text-cyan-400">
+        <h1 className="text-2xl font-bold text-[#59d102] dark:text-cyan-400">
           Đặng Hữu Quang Huy
         </h1>
       </motion.div>
@@ -35,10 +35,17 @@ function HeroContent() {
         transition={{ duration: 0.35, delay: 0.2, ease: "easeOut" }}
         className="text-4xl lg:text-6xl font-bold leading-tight"
       >
+        {/* Chế độ sáng */}
+        <img
+          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=59d102&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
+          alt="Typing SVG"
+          className="max-w-full h-auto dark:hidden"
+        />
+        {/* Chế độ tối */}
         <img
           src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
           alt="Typing SVG"
-          className="max-w-full h-auto"
+          className="max-w-full h-auto hidden dark:block"
         />
       </motion.h2>
 
