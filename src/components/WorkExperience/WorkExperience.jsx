@@ -13,13 +13,12 @@ function WorkExperience() {
   };
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-300 shadow-lg border-2 border-gray-300 dark:border-gray-600 rounded-lg">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#f7fbe9] dark:bg-slate-900 transition-colors duration-300 shadow-lg border-2 border-gray-300 dark:border-gray-600 rounded-lg">
       <div className="container mx-auto px-4 sm:px-6">
         <SectionTitle title="Kinh nghiệm làm việc" className="mb-6" />
 
         <div className="relative max-w-4xl mx-auto">
-          {/* Đường timeline: căn giữa theo kích thước chấm (16px / 20px / 24px) */}
-          <div className="absolute left-[7px] sm:left-[9px] md:left-[11px] top-0 bottom-0 w-[2px] bg-[#03a0c5]" />
+          <div className="absolute left-[7px] sm:left-[9px] md:left-[11px] top-0 bottom-0 w-[2px] bg-[#59d102] dark:bg-[#03a0c5]" />
 
           {WORK_EXPERIENCES.map((item, index) => {
             const isOpen = openId === item.id;
@@ -41,7 +40,7 @@ function WorkExperience() {
                 {/* Dot */}
                 <div className="flex-shrink-0 flex md:block items-start md:items-center">
                   <div
-                    className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-[#03a0c5] border-4 border-white dark:border-slate-900 mt-0 md:mt-6
+                    className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-[#59d102] dark:bg-[#03a0c5] border-4 border-white dark:border-slate-900 mt-0 md:mt-6
                     group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -57,7 +56,7 @@ function WorkExperience() {
                     onClick={() => toggle(item.id)}
                     aria-expanded={isOpen}
                     aria-controls={panelId}
-                    className="w-full flex justify-between items-start gap-2 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#03a0c5] rounded-lg"
+                    className="w-full flex justify-between items-start gap-2 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#59d102] dark:focus-visible:ring-[#03a0c5] rounded-lg"
                   >
                     <div className="flex gap-3 sm:gap-4 min-w-0">
                       {/* Logo */}
@@ -92,10 +91,10 @@ function WorkExperience() {
 
                     <FaCircleChevronDown
                       aria-hidden="true"
-                      className={`w-5 h-5 sm:w-6 sm:h-6 mt-1 sm:mt-2 shrink-0 transition-transform duration-300 hover:text-[#03a0c5]
+                      className={`w-5 h-5 sm:w-6 sm:h-6 mt-1 sm:mt-2 shrink-0 transition-transform duration-300 hover:text-[#59d102] dark:hover:text-[#03a0c5]
                         ${
                           isOpen
-                            ? "rotate-180 text-[#03a0c5]"
+                            ? "rotate-180 text-[#59d102] dark:text-[#03a0c5]"
                             : "text-gray-400 dark:text-gray-300"
                         }`}
                     />
@@ -116,7 +115,7 @@ function WorkExperience() {
                       <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-300">
                         {item.details?.map((text, i) => (
                           <li key={i} className="flex items-start gap-2">
-                            <span className="text-[#03a0c5] mt-1 shrink-0">
+                            <span className="text-[#59d102] dark:text-[#03a0c5] mt-1 shrink-0">
                               <FaHandPointRight />
                             </span>
                             <span>{text}</span>

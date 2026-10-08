@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowUp } from "react-icons/fa";
+
 const BackToTop = () => {
   const [show, setShow] = useState(false);
   const [progressAngle, setProgressAngle] = useState(0);
@@ -42,7 +43,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-10 right-10 w-10 h-10 bg-transparent flex items-center justify-center text-[#03a0c5] text-xl cursor-pointer border-none rounded-full transition-all duration-300 ease-in-out z-[1000] ${
+      className={`fixed bottom-10 right-10 w-10 h-10 bg-transparent flex items-center justify-center text-[#59d102] dark:text-[#03a0c5] text-xl cursor-pointer border-none rounded-full transition-all duration-300 ease-in-out z-[1000] ${
         show ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
       style={{
@@ -50,10 +51,10 @@ const BackToTop = () => {
       }}
     >
       <span
-        className="absolute -top-[1px] -left-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] rounded-full border-[3px] border-[#03a0c5] z-[1] transition-all duration-300 ease-in-out"
+        className="absolute -top-[1px] -left-[1px] w-[calc(100%+2px)] h-[calc(100%+2px)] rounded-full border-[3px] border-[#59d102] dark:border-[#03a0c5] z-[1] transition-all duration-300 ease-in-out"
         style={{
-          maskImage: `conic-gradient(#03a0c5 ${progressAngle}deg, transparent 0)`,
-          WebkitMaskImage: `conic-gradient(#03a0c5 ${progressAngle}deg, transparent 0)`,
+          maskImage: `conic-gradient(#000 ${progressAngle}deg, transparent 0)`,
+          WebkitMaskImage: `conic-gradient(#000 ${progressAngle}deg, transparent 0)`,
         }}
       />
       <span className="text-base transition-all duration-300 ease-in-out">

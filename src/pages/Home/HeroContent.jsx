@@ -19,7 +19,8 @@ function HeroContent() {
       >
         <p
           className="text-lg font-medium text-transparent bg-gradient-to-r 
-                     from-blue-500 to-cyan-500 bg-clip-text"
+                     from-[#f3f520] to-[#59d102] 
+                     dark:from-blue-500 dark:to-cyan-500 bg-clip-text"
         >
           👋 Xin chào, tôi là
         </p>
@@ -48,7 +49,7 @@ function HeroContent() {
         className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-md"
       >
         Đam mê xây dựng các giải pháp phần mềm
-        <span className="text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text font-semibold">
+        <span className="text-transparent bg-gradient-to-r from-[#f3f520] to-[#59d102] dark:from-blue-500 dark:to-purple-500 bg-clip-text font-semibold">
           {" "}
           mở rộng và hiệu quả
         </span>
@@ -115,7 +116,8 @@ function HeroContent() {
         <div className="text-center">
           <div
             className="text-2xl font-bold text-transparent bg-gradient-to-r 
-                         from-blue-500 to-purple-500 bg-clip-text"
+                       from-[#f3f520] to-[#59d102] 
+                       dark:from-blue-500 dark:to-purple-500 bg-clip-text"
           >
             6+
           </div>
@@ -126,7 +128,8 @@ function HeroContent() {
         <div className="text-center">
           <div
             className="text-2xl font-bold text-transparent bg-gradient-to-r 
-                         from-green-500 to-teal-500 bg-clip-text"
+                       from-[#f3f520] to-[#59d102] 
+                       dark:from-green-500 dark:to-teal-500 bg-clip-text"
           >
             1+
           </div>

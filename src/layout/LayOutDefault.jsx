@@ -8,7 +8,7 @@ const LayOutDefault = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col">
+    <div className="bg-[#fafce8] dark:bg-slate-950 min-h-screen flex flex-col">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 py-4">
         <Header menuOpen={menuOpen} isMenuOpen={setMenuOpen} />

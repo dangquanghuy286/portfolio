@@ -11,18 +11,15 @@ const HomeDefault = ({ menuOpen }) => {
   const limitedProjects = projects.slice(0, 3);
 
   return (
-    <div className="bg-slate-100 dark:bg-slate-950 min-h-screen flex flex-col items-center overflow-x-clip antialiased">
-     
+    <div className="bg-[#f4fbe6] dark:bg-slate-950 min-h-screen flex flex-col items-center overflow-x-clip antialiased">
       <div className="w-full max-w-7xl px-4 py-8">
         <Home menuOpen={menuOpen} />
       </div>
 
-     
       <div className="w-full max-w-7xl px-4 py-8">
         <Tape />
       </div>
 
- 
       <div className="w-full max-w-7xl px-4 py-8">
         <Projects data={limitedProjects} />
       </div>

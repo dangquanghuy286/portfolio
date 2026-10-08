@@ -16,7 +16,7 @@ const Tape = () => {
         viewport={{ once: true }}
         className="relative"
       >
-        <div className="-mx-[20%] -rotate-4 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600 shadow-2xl [backface-visibility:hidden] will-change-transform">
+        <div className="-mx-[20%] -rotate-4 bg-gradient-to-r from-[#f3f520] to-[#59d102] dark:from-teal-400 dark:via-blue-500 dark:to-purple-600 shadow-2xl [backface-visibility:hidden] will-change-transform">
           {/* Enhanced */}
           <div className="mask-gradient-right animate-scroll flex flex-none gap-6 py-4 pr-6">
             {/* Increased */}

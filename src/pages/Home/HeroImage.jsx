@@ -10,7 +10,7 @@ import {
 
 const HeroImage = () => {
   return (
-    <div className="mask-gradient relative w-full max-w-[450px] overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] border-[#03a0c5] bg-gray-700 md:h-[660px]">
+    <div className="mask-gradient relative w-full max-w-[450px] overflow-hidden rounded-bl-full rounded-br-full border-r-[10px] dark:border-[#03a0c5] bg-gray-700 md:h-[660px] border-[#f3f520]">
       <AnimatedIcon Icon={BiLogoReact} className="left-10 top-15" delay={0} />
       <AnimatedIcon Icon={BiLogoCss3} className="left-5 top-40" delay={0.4} />
       <AnimatedIcon

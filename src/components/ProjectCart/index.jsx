@@ -51,7 +51,7 @@ const ProjectCart = ({ projects, index }) => {
           href={projects.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-auto inline-block w-fit px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl group-hover:from-purple-500 group-hover:to-cyan-500"
+          className="mt-auto inline-block w-fit px-5 py-2 text-sm font-medium text-white bg-gradient-to-r from-[#f3f520] to-[#59d102] dark:from-blue-500 dark:to-purple-500 rounded-full shadow-md transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:shadow-xl dark:group-hover:from-purple-500 dark:group-hover:to-cyan-500"
         >
           Xem chi tiết
         </a>

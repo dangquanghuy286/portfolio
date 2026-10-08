@@ -21,7 +21,10 @@ const Header = ({ menuOpen, isMenuOpen }) => {
             {menu.map((item, index) =>
               item.link.map((link, linkIndex) => (
                 <li key={`${index}-${linkIndex}`}>
-                  <NavLink className="nav_item" to={link.path}>
+                  <NavLink
+                    className="nav_item rounded-full px-3 py-1.5 transition-colors duration-300 hover:bg-[#59d102] hover:text-white dark:hover:bg-[#03a0c5]"
+                    to={link.path}
+                  >
                     {link.text}
                   </NavLink>
                 </li>
