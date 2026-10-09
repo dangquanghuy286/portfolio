@@ -6,7 +6,6 @@ import Footer from "./Footer";
 
 const LayOutDefault = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const currentYear = new Date().getFullYear();
 
   return (
     <div className="bg-[##fcfdf0] dark:bg-slate-950 min-h-screen flex flex-col">
