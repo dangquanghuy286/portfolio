@@ -50,12 +50,13 @@ export const WORK_EXPERIENCES = [
 export const projects = [
   {
     id: 1,
-    title: "Shoe Store E-Commerce",
-    image: shoesImage,
+    title: "GlobeTrek Travel Website",
+    image: globetrek,
     description:
-      "Phát triển website thương mại điện tử bán giày bằng ReactJS với giao diện hiện đại và responsive. Xây dựng các chức năng quản lý sản phẩm, giỏ hàng, đặt hàng và thanh toán. Tối ưu UI/UX, cải thiện hiệu suất tải trang và mang đến trải nghiệm mua sắm mượt mà trên nhiều thiết bị.",
-    link: "https://github.com/khaipro09/ShoeStore",
+      "Nâng cấp và tối ưu giao diện website du lịch GlobeTrek bằng HTML, SCSS, JavaScript và Bootstrap. Cải thiện UI/UX, tối ưu responsive trên đa thiết bị, bổ sung hiệu ứng animation và tích hợp Google Maps API để hiển thị vị trí và điểm đến trực quan.",
+    link: "https://github.com/dangquanghuy286/globetrek.git",
   },
+
   {
     id: 2,
     title: "Home Rental Website",
@@ -91,11 +92,11 @@ export const projects = [
   },
   {
     id: 6,
-    title: "GlobeTrek Travel Website",
-    image: globetrek,
+    title: "Shoe Store E-Commerce",
+    image: shoesImage,
     description:
-      "Nâng cấp và tối ưu giao diện website du lịch GlobeTrek bằng HTML, SCSS, JavaScript và Bootstrap. Cải thiện UI/UX, tối ưu responsive trên đa thiết bị, bổ sung hiệu ứng animation và tích hợp Google Maps API để hiển thị vị trí và điểm đến trực quan.",
-    link: "https://github.com/dangquanghuy286/globetrek.git",
+      "Phát triển website thương mại điện tử bán giày bằng ReactJS với giao diện hiện đại và responsive. Xây dựng các chức năng quản lý sản phẩm, giỏ hàng, đặt hàng và thanh toán. Tối ưu UI/UX, cải thiện hiệu suất tải trang và mang đến trải nghiệm mua sắm mượt mà trên nhiều thiết bị.",
+    link: "https://github.com/khaipro09/ShoeStore",
   },
 ];
 
