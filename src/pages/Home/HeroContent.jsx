@@ -20,11 +20,11 @@ function HeroContent() {
         <p
           className="text-lg font-medium text-transparent bg-gradient-to-r 
                      from-[#59d102] to-[#f3f520] 
-                     dark:from-blue-500 dark:to-cyan-500 bg-clip-text"
+                     dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text"
         >
           👋 Xin chào, tôi là
         </p>
-        <h1 className="text-2xl font-bold text-[#59d102] dark:text-cyan-400">
+        <h1 className="text-2xl font-bold text-[#59d102] dark:text-[#00c0d1]">
           Đặng Hữu Quang Huy
         </h1>
       </motion.div>
@@ -37,13 +37,14 @@ function HeroContent() {
       >
         {/* Chế độ sáng */}
         <img
-          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=59d102&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
+          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=59d102&vCenter=true&width=600&lines=Software+Developer;IT+Support;Web+Developer"
           alt="Typing SVG"
           className="max-w-full h-auto dark:hidden"
         />
+
         {/* Chế độ tối */}
         <img
-          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Frontend+Developer;QA+Tester;UI/UX+Designer;Web+Developer;Test+Engineer;Product+Designer"
+          src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Software+Developer;IT+Support;Web+Developer"
           alt="Typing SVG"
           className="max-w-full h-auto hidden dark:block"
         />
@@ -56,7 +57,7 @@ function HeroContent() {
         className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-md"
       >
         Đam mê xây dựng các giải pháp phần mềm
-        <span className="text-transparent bg-gradient-to-r from-[#59d102] to-[#f3f520] dark:from-blue-500 dark:to-purple-500 bg-clip-text font-semibold">
+        <span className="text-transparent bg-gradient-to-r from-[#59d102] to-[#f3f520] dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text font-semibold">
           {" "}
           mở rộng và hiệu quả
         </span>
@@ -124,7 +125,7 @@ function HeroContent() {
           <div
             className="text-2xl font-bold text-transparent bg-gradient-to-r 
                        from-[#f3f520] to-[#59d102] 
-                       dark:from-blue-500 dark:to-purple-500 bg-clip-text"
+                       dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text"
           >
             6+
           </div>
@@ -136,7 +137,7 @@ function HeroContent() {
           <div
             className="text-2xl font-bold text-transparent bg-gradient-to-r 
                        from-[#f3f520] to-[#59d102] 
-                       dark:from-green-500 dark:to-teal-500 bg-clip-text"
+                       dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text"
           >
             1+
           </div>

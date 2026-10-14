@@ -37,10 +37,10 @@ const About = () => {
           {/* Khung GIF */}
           <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
             {/* Vầng sáng mờ phía sau */}
-            <div className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] opacity-40 blur-xl dark:from-blue-500 dark:to-cyan-400 dark:opacity-30" />
+            <div className="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] opacity-40 blur-xl dark:from-[#0891b2] dark:to-[#2ee6c5] dark:opacity-30" />
 
             {/* Viền gradient */}
-            <div className="relative rounded-2xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] p-[5px] shadow-xl dark:from-blue-500 dark:to-cyan-400">
+            <div className="relative rounded-2xl bg-gradient-to-tr from-[#59d102] to-[#f3f520] p-[5px] shadow-xl dark:from-[#0891b2] dark:to-[#2ee6c5]">
               {/* Lớp ngăn giữa viền và GIF */}
               <div className="rounded-xl bg-[#f7fbe9] p-1.5 dark:bg-slate-900">
                 <img
@@ -76,7 +76,7 @@ const About = () => {
                 <strong>Email:</strong>{" "}
                 <a
                   href="mailto:huydang2806@gmail.com"
-                  className="hover:underline"
+                  className="hover:underline dark:hover:text-[#00c0d1]"
                 >
                   huydang2806@gmail.com
                 </a>

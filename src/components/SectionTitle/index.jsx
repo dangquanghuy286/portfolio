@@ -13,7 +13,7 @@ const SectionTitle = ({ title, subtitle, className = "" }) => {
         <h2
           className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white 
                        bg-gradient-to-r from-[#f3f520] to-[#59d102] 
-                       dark:from-blue-600 dark:via-purple-600 dark:to-cyan-600 
+                       dark:from-[#0891b2] dark:via-[#00c0d1] dark:to-[#2ee6c5] 
                        bg-clip-text text-transparent"
         >
           {title}
@@ -23,11 +23,11 @@ const SectionTitle = ({ title, subtitle, className = "" }) => {
         <div
           className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
                        w-20 h-1 bg-gradient-to-r from-[#f3f520] to-[#59d102] 
-                       dark:from-blue-500 dark:to-purple-500 rounded-full"
+                       dark:from-[#0891b2] dark:to-[#2ee6c5] rounded-full"
         >
           <div
             className="absolute inset-0 bg-gradient-to-r from-[#f3f520] to-[#59d102] 
-                         dark:from-blue-500 dark:to-purple-500 
+                         dark:from-[#0891b2] dark:to-[#2ee6c5] 
                          rounded-full blur-sm opacity-75"
           />
         </div>
