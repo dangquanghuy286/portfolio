@@ -165,7 +165,6 @@ export const contactDetails = [
   },
 ];
 export const words = [
-  // Frontend
   "HTML5",
   "CSS3",
   "JavaScript (ES6+)",
@@ -179,34 +178,23 @@ export const words = [
   "TanStack Query",
   "React Hook Form",
   "Zod",
-
-  // UI & Styling
   "Tailwind CSS",
   "SCSS",
   "Bootstrap",
   "Ant Design",
   "Responsive Design",
   "Figma",
-
-  // Backend
   "Node.js",
   "Express.js",
   "REST API",
   "Socket.IO",
   "JWT Authentication",
-
-  // Database
   "MongoDB",
   "MySQL",
-
-  // Data Visualization
   "Chart.js",
-
-  // Tools & Workflow
   "Git",
   "GitHub",
   "GitLab",
   "Postman",
   "Jira",
-  "CI/CD",
 ];
