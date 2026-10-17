@@ -35,14 +35,12 @@ function HeroContent() {
         transition={{ duration: 0.35, delay: 0.2, ease: "easeOut" }}
         className="text-4xl lg:text-6xl font-bold leading-tight"
       >
-        {/* Chế độ sáng */}
         <img
           src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=59d102&vCenter=true&width=600&lines=Software+Developer;IT+Support;Web+Developer"
           alt="Typing SVG"
           className="max-w-full h-auto dark:hidden"
         />
 
-        {/* Chế độ tối */}
         <img
           src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=48&duration=4000&pause=1000&color=00c0d1&vCenter=true&width=600&lines=Software+Developer;IT+Support;Web+Developer"
           alt="Typing SVG"

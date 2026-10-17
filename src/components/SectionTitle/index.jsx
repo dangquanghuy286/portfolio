@@ -19,7 +19,6 @@ const SectionTitle = ({ title, subtitle, className = "" }) => {
           {title}
         </h2>
 
-        {/* Decorative line */}
         <div
           className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 
                        w-20 h-1 bg-gradient-to-r from-[#f3f520] to-[#59d102] 
