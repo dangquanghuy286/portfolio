@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
 import { openContactMail } from "../../util/contact";
-
+import { PiHandWavingFill } from "react-icons/pi";
 function HeroContent() {
   return (
     <motion.div
@@ -17,12 +17,15 @@ function HeroContent() {
         transition={{ duration: 0.35, delay: 0.1, ease: "easeOut" }}
         className="space-y-2"
       >
-        <p
-          className="text-lg font-medium text-transparent bg-gradient-to-r 
-                     from-[#59d102] to-[#f3f520] 
-                     dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text"
-        >
-          👋 Xin chào, tôi là
+        <p className="flex items-center gap-2 text-lg font-medium">
+          <PiHandWavingFill className="text-[#59d102] dark:text-[#00c0d1]" />
+          <span
+            className="text-transparent bg-gradient-to-r 
+               from-[#59d102] to-[#f3f520] 
+               dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text"
+          >
+            Xin chào, tôi là
+          </span>
         </p>
         <h1 className="text-2xl font-bold text-[#59d102] dark:text-[#00c0d1]">
           Đặng Hữu Quang Huy
