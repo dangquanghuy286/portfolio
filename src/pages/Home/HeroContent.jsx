@@ -18,7 +18,7 @@ function HeroContent() {
         className="space-y-2"
       >
         <p className="flex items-center gap-2 text-lg font-medium">
-          <PiHandWavingFill className="text-[#59d102] dark:text-[#00c0d1]" />
+          <PiHandWavingFill className="text-[#59d102] text-3xl dark:text-[#00c0d1]" />
           <span
             className="text-transparent bg-gradient-to-r 
                from-[#59d102] to-[#f3f520] 
