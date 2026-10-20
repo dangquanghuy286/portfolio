@@ -62,7 +62,7 @@ function HeroContent() {
           {" "}
           mở rộng và hiệu quả
         </span>
-        . Tạo ra những trải nghiệm web thật tuyệt vời.
+        . Tạo ra những sản phẩm chất lượng .
       </motion.p>
 
       <motion.div
