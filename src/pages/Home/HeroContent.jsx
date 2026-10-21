@@ -57,12 +57,12 @@ function HeroContent() {
         transition={{ duration: 0.35, delay: 0.3, ease: "easeOut" }}
         className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-md"
       >
-        Đam mê xây dựng các giải pháp phần mềm
+        Đam mê công nghệ, không ngừng học hỏi và phát triển kỹ năng. Hướng đến
+        việc xây dựng những{" "}
         <span className="text-transparent bg-gradient-to-r from-[#59d102] to-[#f3f520] dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text font-semibold">
-          {" "}
-          mở rộng và hiệu quả
+          giải pháp phần mềm hiện đại, hiệu quả và mang lại giá trị thực tiễn
         </span>
-        . Tạo ra những sản phẩm chất lượng .
+        .
       </motion.p>
 
       <motion.div
