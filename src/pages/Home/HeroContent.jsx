@@ -59,12 +59,10 @@ function HeroContent() {
       >
         Đam mê công nghệ, không ngừng học hỏi và phát triển kỹ năng. Hướng đến
         việc xây dựng những{" "}
-        <span className="text-transparent bg-gradient-to-r from-[#59d102] to-[#f3f520] dark:from-[#00c0d1] dark:to-[#2ee6c5] bg-clip-text font-semibold">
-          giải pháp phần mềm hiện đại, hiệu quả và mang lại giá trị thực tiễn
+        <span className="text-[#59d102] dark:text-transparent dark:bg-gradient-to-r dark:from-[#00c0d1] dark:to-[#2ee6c5] dark:bg-clip-text font-semibold">
+          giải pháp phần mềm hiện đại, hiệu quả và mang lại giá trị thực tiễn.
         </span>
-        .
       </motion.p>
-
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}
