@@ -60,7 +60,7 @@ function HeroContent() {
         Đam mê công nghệ, không ngừng học hỏi và phát triển kỹ năng. Hướng đến
         việc xây dựng những{" "}
         <span className="text-[#59d102] dark:text-transparent dark:bg-gradient-to-r dark:from-[#00c0d1] dark:to-[#2ee6c5] dark:bg-clip-text font-semibold">
-          giải pháp phần mềm hiện đại, hiệu quả và mang lại giá trị thực tiễn
+          giải pháp phần mềm hiện đại, hiệu quả và mang lại giá trị 
           hữu ích cho người dùng.
         </span>
       </motion.p>
