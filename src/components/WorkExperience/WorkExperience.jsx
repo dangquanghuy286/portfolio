@@ -77,12 +77,10 @@ function WorkExperience() {
                           {item.role}
                         </h3>
 
-                        {/* Company */}
                         <p className="text-xs sm:text-sm md:text-base text-gray-500 dark:text-gray-400 break-words">
                           {item.company}
                         </p>
 
-                        {/* Time */}
                         <p className="text-[11px] sm:text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">
                           {item.time}
                         </p>

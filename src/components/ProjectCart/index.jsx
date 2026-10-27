@@ -28,7 +28,6 @@ const ProjectCart = ({ projects, index }) => {
         </div>
       </div>
 
-      {/* Content Section */}
       <div className="flex-1 flex flex-col gap-4 h-full">
         <a
           href={projects.link}
