@@ -50,7 +50,7 @@ function WorkExperience() {
                   className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 sm:p-6 w-full
                   hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ml-2 sm:ml-4 mr-1"
                 >
-                  {/* Header */}
+                 
                   <button
                     type="button"
                     onClick={() => toggle(item.id)}
@@ -59,7 +59,7 @@ function WorkExperience() {
                     className="w-full flex justify-between items-start gap-2 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#59d102] dark:focus-visible:ring-[#00c0d1] rounded-lg"
                   >
                     <div className="flex gap-3 sm:gap-4 min-w-0">
-                      {/* Logo */}
+                      
                       <div className="w-12 h-12 sm:w-16 sm:h-16 shrink-0 rounded-lg bg-slate-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden">
                         {item.logo && (
                           <img
@@ -72,7 +72,7 @@ function WorkExperience() {
                       </div>
 
                       <div className="min-w-0">
-                        {/* Role */}
+                        
                         <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white break-words">
                           {item.role}
                         </h3>
