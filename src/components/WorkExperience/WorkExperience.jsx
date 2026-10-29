@@ -37,7 +37,7 @@ function WorkExperience() {
                 }}
                 className="relative flex flex-col md:flex-row gap-3 sm:gap-6 mb-6 sm:mb-10 group"
               >
-                {/* Dot */}
+                
                 <div className="flex-shrink-0 flex md:block items-start md:items-center">
                   <div
                     className="relative z-10 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 rounded-full bg-[#59d102] dark:bg-[#00c0d1] border-4 border-white dark:border-slate-900 mt-0 md:mt-6
@@ -45,7 +45,7 @@ function WorkExperience() {
                   />
                 </div>
 
-                {/* Card */}
+                
                 <div
                   className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-4 sm:p-6 w-full
                   hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 ml-2 sm:ml-4 mr-1"
