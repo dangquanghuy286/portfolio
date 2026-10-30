@@ -15,7 +15,7 @@ import {
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const iconClass = "text-xl text-gray-800 dark:text-gray-200";
-// constants/workExperience.js
+
 export const WORK_EXPERIENCES = [
   {
     id: 1,
