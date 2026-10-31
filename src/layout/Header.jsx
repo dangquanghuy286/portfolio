@@ -16,7 +16,6 @@ const Header = ({ menuOpen, isMenuOpen }) => {
             <Logo />
           </div>
 
-          {/* Desktop Navigation */}
           <ul className="hidden space-x-4 md:flex">
             {menu.map((item, index) =>
               item.link.map((link, linkIndex) => (
@@ -56,7 +55,6 @@ const Header = ({ menuOpen, isMenuOpen }) => {
         </nav>
       </header>
 
-      {/* Overlay for Mobile Menu */}
       {menuOpen && (
         <div
           className="fixed inset-0 z-20 bg-slate-950 opacity-50"
