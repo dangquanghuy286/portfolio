@@ -43,7 +43,7 @@ const Contact = () => {
               Gửi tin nhắn cho tôi
             </h1>
             <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg">
-              Nếu bạn có thắc mắc hoặc câu hỏi, hãy liên hệ với tôi!
+              Nếu bạn có thắc mắc hoặc câu hỏi, hãy liên hệ với tôi qua các phương thức dưới đây. Tôi sẽ cố gắng phản hồi nhanh nhất có thể.
             </p>
           </div>
 
