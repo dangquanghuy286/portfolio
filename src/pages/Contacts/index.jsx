@@ -16,9 +16,10 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-2 border-gray-200 dark:border-gray-600 
+        className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-2 border-gray-200 dark:border-gray-600
         rounded-lg bg-[#f7fbe9] dark:bg-gray-900 p-6 sm:p-8 transition-colors duration-300 shadow-sm"
       >
+        {/* Contact Illustration */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -32,6 +33,7 @@ const Contact = () => {
           />
         </motion.div>
 
+        {/* Contact Content */}
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -40,13 +42,23 @@ const Contact = () => {
         >
           <div className="flex flex-col gap-3">
             <h1 className="font-cabin text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white/80">
-              Gửi tin nhắn cho tôi
+              Hãy cùng kết nối với tôi!
             </h1>
-            <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg">
-              Nếu bạn có câu hỏi, hãy liên hệ với tôi qua các phương thức dưới đây.
+
+            <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg leading-relaxed">
+              Cảm ơn bạn đã ghé thăm . Nếu bạn đang tìm kiếm một Frontend
+              Developer, muốn trao đổi về công nghệ, chia sẻ ý tưởng hoặc có cơ
+              hội hợp tác trong các dự án, đừng ngần ngại liên hệ với tôi.
+            </p>
+
+            <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg leading-relaxed">
+              Tôi luôn sẵn sàng học hỏi, tiếp thu những kiến thức mới và đón
+              nhận các cơ hội để phát triển bản thân trong lĩnh vực phát triển
+              web.
             </p>
           </div>
 
+          {/* Contact Details */}
           <div className="flex flex-col gap-4">
             {contactDetails.map((contact) => (
               <ContactDetailCard key={contact.id} contact={contact} />
