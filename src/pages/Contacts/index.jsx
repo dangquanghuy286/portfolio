@@ -46,9 +46,9 @@ const Contact = () => {
             </h1>
 
             <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg leading-relaxed">
-              Cảm ơn bạn đã ghé thăm . Nếu bạn đang tìm kiếm một Frontend
-              Developer, muốn trao đổi về công nghệ, chia sẻ ý tưởng hoặc có cơ
-              hội hợp tác trong các dự án, đừng ngần ngại liên hệ với tôi.
+              Cảm ơn bạn đã ghé thăm . Nếu bạn đang tìm kiếm một Developer, chia
+              sẻ ý tưởng hoặc có cơ hội hợp tác trong các dự án, đừng ngần ngại
+              liên hệ với tôi.
             </p>
 
             <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg leading-relaxed">
