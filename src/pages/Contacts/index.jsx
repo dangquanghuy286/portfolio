@@ -54,7 +54,6 @@ const Contact = () => {
             <p className="text-gray-600 dark:text-white/60 text-base sm:text-lg leading-relaxed">
               Tôi luôn sẵn sàng học hỏi, tiếp thu những kiến thức mới và đón
               nhận các cơ hội để phát triển bản thân trong lĩnh vực phát triển
-              web.
             </p>
           </div>
 
