@@ -33,7 +33,7 @@ const Contact = () => {
           />
         </motion.div>
 
-        {/* Contact Content */}
+        
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
