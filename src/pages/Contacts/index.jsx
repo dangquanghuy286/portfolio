@@ -19,7 +19,6 @@ const Contact = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-2 border-gray-200 dark:border-gray-600
         rounded-lg bg-[#f7fbe9] dark:bg-gray-900 p-6 sm:p-8 transition-colors duration-300 shadow-sm"
       >
-        {/* Contact Illustration */}
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -33,7 +32,6 @@ const Contact = () => {
           />
         </motion.div>
 
-        
         <motion.div
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
