@@ -4,7 +4,6 @@ import React from "react";
 const ProjectCart = ({ projects, index }) => {
   return (
     <div className="group cursor-pointer h-full overflow-hidden rounded-2xl border-2 border-gray-300 bg-white dark:border-gray-600 dark:bg-slate-900 p-6 md:flex md:items-start gap-6 shadow-lg transition-all duration-300 ease-in-out flex-col hover:-translate-y-2 hover:shadow-2xl hover:border-[#59d102] dark:hover:border-[#00c0d1]">
-      {/* Image Section */}
       <div className="w-full flex justify-center mb-5 md:mb-0">
         <div className="relative w-full overflow-hidden rounded-lg shadow-md">
           <a
