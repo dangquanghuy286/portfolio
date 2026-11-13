@@ -14,12 +14,10 @@ const Home = ({ menuOpen }) => {
         }`}
       >
         <div className="relative flex flex-col-reverse w-full md:flex-row items-center justify-between min-h-[80vh] gap-12">
-          {/* HeroContent */}
           <div className="z-10 w-full md:w-1/2">
             <HeroContent />
           </div>
 
-          {/* HeroImage */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
