@@ -6,7 +6,6 @@ import { BiLogoMeta } from "react-icons/bi";
 const Tape = () => {
   return (
     <section className="overflow-hidden py-24 lg:py-32 relative">
-      {/* Background decorative elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#f3f520]/10 to-transparent dark:via-[#00c0d1]/10"></div>
 
       <motion.div
@@ -17,10 +16,7 @@ const Tape = () => {
         className="relative"
       >
         <div className="-mx-[20%] -rotate-4 bg-gradient-to-r from-[#f3f520] to-[#59d102] dark:from-[#0891b2] dark:via-[#00c0d1] dark:to-[#2ee6c5] shadow-2xl dark:shadow-[0_0_40px_rgba(0,192,209,0.25)] [backface-visibility:hidden] will-change-transform">
-          {/* Enhanced */}
           <div className="mask-gradient-right animate-scroll flex flex-none gap-6 py-4 pr-6">
-            {/* Increased */}
-
             {[...new Array(3)].map((_, index) => (
               <Fragment key={index}>
                 {words.map((word, wordIndex) => (
